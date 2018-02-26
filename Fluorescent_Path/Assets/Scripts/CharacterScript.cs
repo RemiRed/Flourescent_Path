@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterScript : MonoBehaviour {
+public class CharacterScript : MonoBehaviour
+{
     [SerializeField]
     float movementSpeed;
     [SerializeField]
@@ -12,18 +13,22 @@ public class CharacterScript : MonoBehaviour {
 
     Rigidbody rigby;
     Collider collider;
-	// Use this for initialization
-	void Start () {
+
+
+    // Use this for initialization
+    void Start()
+    {
         Cursor.lockState = CursorLockMode.Locked;
         rigby = GetComponent<Rigidbody>();
         collider = GetComponent<Collider>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        rigby.AddRelativeForce(Input.GetAxisRaw("Horizontal") * movementSpeed, 0, Input.GetAxisRaw("Vertical") * movementSpeed, ForceMode.Force);
+    }
 
-        if(Input.GetAxisRaw("Jump") !=0 && IsGrounded())
+    // Update is called once per frame
+    void Update()
+    {
+        rigby.AddRelativeForce(Input.GetAxisRaw("Horizontal Movement") * movementSpeed, 0, Input.GetAxisRaw("Vertical Movement") * movementSpeed, ForceMode.Force);
+
+        if (Input.GetAxisRaw("Jump") != 0 && IsGrounded())
         {
             rigby.AddRelativeForce(0, jumpPower, 0);
         }
@@ -39,10 +44,13 @@ public class CharacterScript : MonoBehaviour {
         {
             gravity = 0;
         }
+
+        
     }
 
     bool IsGrounded()
     {
         return Physics.Raycast(transform.position, -Vector3.up, collider.bounds.extents.y + 0.1f);
     }
+
 }
