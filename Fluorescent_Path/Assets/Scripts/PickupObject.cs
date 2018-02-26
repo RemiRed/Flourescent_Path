@@ -15,23 +15,24 @@ public class PickupObject : MonoBehaviour
     {
         if (carrying)
         {
-            carry(carriedObject);
-            checkDrop();
+            carriedObject.GetComponent<Rigidbody>().freezeRotation = true;
+            Carry(carriedObject);
+            CheckDrop();
         }
         else
         {
-            pickup();
+            Pickup();
         }
     }
 
 
-    void carry(GameObject movable)
+    void Carry(GameObject movable)
     {
-        movable.transform.position = Vector3.Lerp(movable.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * smoothing);
-
+        
+        movable.GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(movable.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * smoothing));
     }
 
-    void pickup()
+    void Pickup()
     {
         if (Input.GetAxisRaw("Interract") >= .5f)
         {
@@ -40,7 +41,7 @@ public class PickupObject : MonoBehaviour
 
             Ray ray = GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit,carryDistance))
             {
 
                 if (hit.transform.tag == "Movable")
@@ -53,15 +54,16 @@ public class PickupObject : MonoBehaviour
         }
     }
 
-    void checkDrop()
+    void CheckDrop()
     {
         if (Input.GetAxisRaw("Interract") <= .5f)
         {
-            dropObject();
+            carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
+            DropObject();
         }
     }
 
-    void dropObject()
+    void DropObject()
     {
         carrying = false;
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
