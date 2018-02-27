@@ -6,14 +6,17 @@ public class CharacterScript : MonoBehaviour
 {
     [SerializeField]
     float movementSpeed;
+	[SerializeField]
+	float gravity = 5f;
     [SerializeField]
     float jumpPower;
 
-    float gravity = 0.0f;
+	float curJumpPower;
 
     Rigidbody rigby;
     Collider collider;
 
+	bool grounded;
 
     // Use this for initialization
     void Start()
@@ -26,31 +29,49 @@ public class CharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigby.AddRelativeForce(Input.GetAxisRaw("Horizontal Movement") * movementSpeed, 0, Input.GetAxisRaw("Vertical Movement") * movementSpeed, ForceMode.Force);
-
-        if (Input.GetAxisRaw("Jump") != 0 && IsGrounded())
+		//Disables the annoying cursor lock
+		if (Input.GetKeyDown("escape"))
+			Cursor.lockState = CursorLockMode.None;
+       
+		//Checks if player can jump (and not already jumped)
+		if (IsGrounded() && curJumpPower <= 0)
         {
-            rigby.AddRelativeForce(0, jumpPower, 0);
-        }
+     		//Sets jump value when jump button is pressed down
+			if(Input.GetButtonDown("Jump")){
 
-        if (Input.GetKeyDown("escape"))
-            Cursor.lockState = CursorLockMode.None;
-        if (!IsGrounded())
-        {
-            gravity -= 5;
-            rigby.AddRelativeForce(0, gravity, 0);
-        }
-        else
-        {
-            gravity = 0;
-        }
+				curJumpPower = jumpPower;
 
-        
+			}else{
+
+				//Sets jump value to a neutral value while grounded
+				curJumpPower = 0;
+			}
+				
+		}else{
+
+			//Increases fall speed while not grounded up to a max value
+			curJumpPower = Mathf.Max (curJumpPower -= gravity, -250f);
+		} 
     }
+
+	void FixedUpdate(){
+
+		//Executes all movements determined by active axis and currenty jump value 
+		rigby.AddRelativeForce(Input.GetAxisRaw("Horizontal Movement") * movementSpeed, curJumpPower, Input.GetAxisRaw("Vertical Movement") * movementSpeed, ForceMode.Force);
+	}
 
     bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, collider.bounds.extents.y + 0.1f);
+		//Runs Raycasts to determine if grounded or not. Uses a triad of raycasts for smoother edge detection.
+		if (Physics.Raycast (transform.position + new Vector3(0,0,collider.bounds.extents.x/2), -Vector3.up, collider.bounds.extents.y + 0.1f)) {
+			grounded = true;
+		} else if (Physics.Raycast (transform.position + new Vector3(collider.bounds.extents.x/2,0,collider.bounds.extents.x/2) , -Vector3.up, collider.bounds.extents.y + 0.1f)) {
+			grounded = true;
+		} else if (Physics.Raycast (transform.position+ new Vector3(-collider.bounds.extents.x/2,0,-collider.bounds.extents.x/2), -Vector3.up, collider.bounds.extents.y + 0.1f)) {
+			grounded = true;
+		} else {
+			grounded = false;
+		}
+		return grounded; 
     }
-
 }
