@@ -602,8 +602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e660845453c59614eb44c2fe8c2f7b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carryDistance: 2
-  smoothing: 6
+  carryDistance: 1.5
+  carrySpeed: 4
 --- !u!1 &1585271527
 GameObject:
   m_ObjectHideFlags: 0

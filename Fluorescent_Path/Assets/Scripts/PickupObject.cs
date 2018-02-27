@@ -4,69 +4,72 @@ using UnityEngine;
 
 public class PickupObject : MonoBehaviour
 {
-    bool carrying;
+    bool carrying = false;
     GameObject carriedObject;
     [SerializeField]
     float carryDistance;
     [SerializeField]
-    float smoothing;
+    float carrySpeed;
 
+    bool keyUp = true;
     void Update()
     {
-        if (carrying)
+        if (Input.GetAxisRaw("Interract") == 1 && keyUp)
         {
-            carriedObject.GetComponent<Rigidbody>().freezeRotation = true;
-            Carry(carriedObject);
-            CheckDrop();
+            keyUp = false;
+            if (carrying)
+            {
+                Drop();
+            }
+            else
+            {
+                Pickup();
+            }
         }
-        else
+        else if (Input.GetAxisRaw("Interract") == 0)
         {
-            Pickup();
+            keyUp = true;
+        }
+
+        if (carrying && carriedObject != null)
+        {
+            carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            carriedObject.transform.position = Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * carrySpeed);
         }
     }
 
 
-    void Carry(GameObject movable)
-    {
-        
-        movable.GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(movable.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * smoothing));
-    }
+
 
     void Pickup()
     {
-        if (Input.GetAxisRaw("Interract") >= .5f)
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+
+        Ray ray = GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, carryDistance))
         {
-            int x = Screen.width / 2;
-            int y = Screen.height / 2;
 
-            Ray ray = GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit,carryDistance))
+            if (hit.transform.tag == "Movable")
             {
+                carrying = true;
+                carriedObject = hit.transform.gameObject;
+                carriedObject.GetComponent<Rigidbody>().useGravity = false;
+                carriedObject.GetComponent<Rigidbody>().freezeRotation = true;
+                carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                carriedObject.transform.parent = transform;
 
-                if (hit.transform.tag == "Movable")
-                {
-                    carrying = true;
-                    carriedObject = hit.transform.gameObject;
-                    hit.transform.gameObject.GetComponent<Rigidbody>().useGravity = false;
-                }
             }
         }
     }
 
-    void CheckDrop()
-    {
-        if (Input.GetAxisRaw("Interract") <= .5f)
-        {
-            carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
-            DropObject();
-        }
-    }
-
-    void DropObject()
+    void Drop()
     {
         carrying = false;
+        carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        carriedObject.transform.parent = null;
         carriedObject = null;
     }
 }
