@@ -10,6 +10,11 @@ public class CharacterScript : MonoBehaviour
 	float gravity = 5f;
     [SerializeField]
     float jumpPower;
+	[SerializeField]
+	float minJumpPower;
+	[SerializeField]
+	float maxJumpPower;
+
 
 	float curJumpPower;
 
@@ -17,6 +22,7 @@ public class CharacterScript : MonoBehaviour
     Collider collider;
 
 	bool grounded;
+	bool jumping;
 
     // Use this for initialization
     void Start()
@@ -39,7 +45,8 @@ public class CharacterScript : MonoBehaviour
      		//Sets jump value when jump button is pressed down
 			if(Input.GetButtonDown("Jump")){
 
-				curJumpPower = jumpPower;
+				curJumpPower = minJumpPower;
+				jumping = true;
 
 			}else{
 
@@ -52,6 +59,21 @@ public class CharacterScript : MonoBehaviour
 			//Increases fall speed while not grounded up to a max value
 			curJumpPower = Mathf.Max (curJumpPower -= gravity, -250f);
 		} 
+
+		if (jumping && Input.GetButton ("Jump")) {
+
+			Debug.Log ("Jumping! :" + curJumpPower);
+			curJumpPower = Mathf.Min (curJumpPower += jumpPower, maxJumpPower);
+
+			if (curJumpPower >= maxJumpPower) {
+
+				jumping = false;
+			}
+
+		} else {
+		
+			jumping = false;
+		}
     }
 
 	void FixedUpdate(){
