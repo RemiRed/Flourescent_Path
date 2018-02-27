@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
         smoothV.y = Mathf.Lerp(smoothV.y, md.y, 1f / smoothing);
         mouseLook += smoothV;
 
-        transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
+        transform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(-mouseLook.y,-visualAngleLimiter,visualAngleLimiter), Vector3.right);
         character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
 
         if (mouseLook.y < -visualAngleLimiter)
