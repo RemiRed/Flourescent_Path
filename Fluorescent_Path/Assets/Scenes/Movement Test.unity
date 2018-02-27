@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 919827978}
   - component: {fileID: 919827977}
   m_Layer: 0
-  m_Name: HeavyMovableCub
+  m_Name: HeavyMovableCube
   m_TagString: Movable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

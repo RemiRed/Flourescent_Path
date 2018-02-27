@@ -86,7 +86,6 @@ public class Interract : MonoBehaviour
 
     void Drop()
     {
-        print(carriedObject.GetComponent<Rigidbody>().velocity);
         carriedObject.GetComponent<Rigidbody>().AddForce((carriedObject.transform.position - oldPos) / (Time.deltaTime * slow));
         carrying = false;
         carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
