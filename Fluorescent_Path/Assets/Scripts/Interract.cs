@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupObject : MonoBehaviour
+public class Interract: MonoBehaviour
 {
     bool carrying = false;
     GameObject carriedObject;
@@ -59,7 +59,10 @@ public class PickupObject : MonoBehaviour
                 carriedObject.GetComponent<Rigidbody>().freezeRotation = true;
                 carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 carriedObject.transform.parent = transform;
-
+            }
+            if (hit.transform.tag == "Interractable")
+            {
+                hit.transform.gameObject.GetComponent<Interractable>().Interract();
             }
         }
     }
