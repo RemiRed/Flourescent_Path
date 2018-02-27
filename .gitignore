@@ -38,3 +38,5 @@ sysinfo.txt
 *.ide-shm
 *.ide-wal
 >>>>>>> Ankan
+*.ide-shm
+*.ide-wal
