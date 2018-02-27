@@ -36,6 +36,7 @@ public class CameraController : MonoBehaviour
 
         transform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(-mouseLook.y,-visualAngleLimiter,visualAngleLimiter), Vector3.right);
         character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
+        
 
         if (mouseLook.y < -visualAngleLimiter)
             mouseLook.y = -visualAngleLimiter;
