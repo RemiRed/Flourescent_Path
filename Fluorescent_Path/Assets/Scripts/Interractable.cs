@@ -7,9 +7,11 @@ public class Interractable : MonoBehaviour
 
     [SerializeField]
     string methodName;
-    
+    [SerializeField]
+    protected float delay;
+
     public void Interract()
     {
-        Invoke(methodName, 0);        
+        Invoke(methodName, delay);
     }
 }
