@@ -42,7 +42,7 @@ public class RoomLoader : MonoBehaviour
         }
     }
 
-    public void Load()
+    public void Load() //Loads the next room, or last room if the last room is the next room
     {
         if (nextRoomNumber < rooms.Length)
         {
@@ -54,7 +54,7 @@ public class RoomLoader : MonoBehaviour
         }
     }
 
-    public void UnloadCorridor()
+    public void UnloadCorridor() //Unloads the previous corridor. Call this after entering the next room
     {
         Destroy(currentCorridor);
         if (nextRoomNumber < rooms.Length)
@@ -66,7 +66,7 @@ public class RoomLoader : MonoBehaviour
 
     }
 
-    void LoadFinalRoom()
+    void LoadFinalRoom() //Loads the final room
     {
         Destroy(currentRoom);
         currentRoom = Instantiate(finalRoomPrefab, currentCorridor.transform.position + new Vector3(0, 0, (finalRoomPrefab.GetComponent<RoomVariables>().length + currentCorridor.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
@@ -75,7 +75,7 @@ public class RoomLoader : MonoBehaviour
 
     }
 
-    void LoadNextRoom()
+    void LoadNextRoom() //Loads the next room
     {
         Destroy(currentRoom);
         currentRoom = Instantiate(rooms[nextRoomNumber], currentCorridor.transform.position + new Vector3(0, 0, (rooms[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridor.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
