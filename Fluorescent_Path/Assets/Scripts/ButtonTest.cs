@@ -24,7 +24,6 @@ public class ButtonTest : Interractable
         StartCoroutine(OpenDoor());
         if (roomLoader != null)
         {
-            entryDoor.SetActive(true);
             roomLoader.Load();
         }
     }
