@@ -5,8 +5,8 @@ using UnityEngine;
 public class ButtonTest : Interractable
 {
 
-    public GameObject door;
-    public GameObject otherDoor;
+    public GameObject exitDoor;
+    public GameObject entryDoor;
     [SerializeField]
     RoomLoader roomLoader;
 
@@ -24,14 +24,14 @@ public class ButtonTest : Interractable
         StartCoroutine(OpenDoor());
         if (roomLoader != null)
         {
-            otherDoor.SetActive(true);
+            entryDoor.SetActive(true);
             roomLoader.Load();
         }
     }
 
     void Unload()
     {
-        door.SetActive(true);
+        exitDoor.SetActive(true);
         roomLoader.UnloadCorridor();
 
     }
@@ -39,7 +39,7 @@ public class ButtonTest : Interractable
     IEnumerator OpenDoor()
     {
         yield return new WaitForSeconds(doorDelay);
-        door.SetActive(false);
+        exitDoor.SetActive(false);
 
         yield return null;
     }
