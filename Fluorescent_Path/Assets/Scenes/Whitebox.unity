@@ -4089,9 +4089,7 @@ MonoBehaviour:
     type: 2}
   doorPrefab: {fileID: 1076443310995392, guid: d98973579d9ff82428bad26838a6d223, type: 2}
   numberOfRooms: 1
-  availableRooms:
-  - {fileID: 0}
-  - {fileID: 0}
+  availableRooms: []
   currentRoom: {fileID: 415809468}
   currentCorridor: {fileID: 39901981}
   doors:
