@@ -15,12 +15,12 @@ public class Interract : MonoBehaviour
     float slow; //Modifier for the force added to the object to simulate throwing
 
     GameObject carriedObject;
-
+    Transform carriedObjectParent;
     bool keyUp = true;
     bool carrying = false;
 
     Vector3 oldPos; //Old position, used to calculate the force to emulate throwing
-
+    Quaternion oldRot; //Old Rotation, used to stop the object from rotating
 
 
     float defaultDrag;
@@ -29,7 +29,7 @@ public class Interract : MonoBehaviour
         defaultDrag = transform.parent.GetComponent<Rigidbody>().drag;
     }
 
-    void FixedUpdate() 
+    void FixedUpdate()
     {
         if (Input.GetAxisRaw("Interract") == 1 && keyUp) //Checks if the key has been pressed and picks up, interracts, or drops an object
         {
@@ -51,6 +51,7 @@ public class Interract : MonoBehaviour
         if (carrying && carriedObject != null) //Returns the object close to the player should it get stuck
         {
             carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            carriedObject.transform.localRotation = oldRot;
             oldPos = carriedObject.transform.position = Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * carrySpeed);
         }
     }
@@ -75,7 +76,9 @@ public class Interract : MonoBehaviour
                 carriedObject.GetComponent<Rigidbody>().useGravity = false;
                 carriedObject.GetComponent<Rigidbody>().freezeRotation = true;
                 carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                carriedObjectParent = carriedObject.transform.parent;
                 carriedObject.transform.parent = transform;
+                oldRot = carriedObject.transform.localRotation;
                 transform.parent.GetComponent<Rigidbody>().drag += carriedObject.GetComponent<Rigidbody>().mass;
             }
             if (hit.transform.tag == "Interractable") //If the object is interractable, like a button, it'll interract with the object
@@ -87,12 +90,13 @@ public class Interract : MonoBehaviour
 
     void Drop() //drops a held object
     {
-        carriedObject.GetComponent<Rigidbody>().AddForce((carriedObject.transform.position - oldPos) / (Time.deltaTime * slow));
         carrying = false;
         carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
-        carriedObject.transform.parent = null;
-        carriedObject = null;
+        carriedObject.transform.parent = carriedObjectParent;
         transform.parent.GetComponent<Rigidbody>().drag = defaultDrag;
+        carriedObject.GetComponent<Rigidbody>().AddForce((carriedObject.transform.position - oldPos) / (Time.deltaTime * slow));
+        carriedObject = null;
+
     }
 }
