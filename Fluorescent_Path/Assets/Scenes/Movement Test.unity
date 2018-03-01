@@ -545,11 +545,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9410d8ad1b78c4888ab81351b92c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 50
-  gravity: 5
-  jumpPower: 10
-  minJumpPower: 40
-  maxJumpPower: 135
+  movementSpeed: 32
+  jumpSpeed: 55
+  maxJumpHeight: 2
+  gravity: 120
+  maxFallSpeed: 200
 --- !u!54 &1174031511
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 3
   smoothing: 2
-  visualAngleLimiter: 75
+  visualAngleLimiter: 70
 --- !u!114 &1388622903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73eafba01b19b8f4fb5ab342b548d390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carryDistance: 1.5
+  carryDistance: 1.8
   carrySpeed: 4
   slow: 1
 --- !u!1 &1571917887
