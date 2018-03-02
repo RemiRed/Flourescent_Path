@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Interractable : MonoBehaviour
 {
-
     [SerializeField]
     string methodName;
     
