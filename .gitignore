@@ -33,3 +33,12 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.ide
+<<<<<<< HEAD
+=======
+*.ide-shm
+*.ide-wal
+>>>>>>> Ankan
+*.ide-shm
+*.ide-wal
+*.ide-shm
+*.ide-wal

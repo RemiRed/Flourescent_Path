@@ -2,17 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interract: MonoBehaviour
+public class Interract : MonoBehaviour
 {
     bool carrying = false;
     GameObject carriedObject;
     [SerializeField]
+    [Range(0.001f, int.MaxValue)]
     float carryDistance;
     [SerializeField]
+    [Range(0.001f, int.MaxValue)]
     float carrySpeed;
 
     bool keyUp = true;
-    void Update()
+
+    Vector3 oldPos;
+
+    [SerializeField]
+    [Range(0.001f, int.MaxValue)]
+    float slow;
+
+
+    float defaultDrag;
+    private void Start()
+    {
+        defaultDrag = transform.parent.GetComponent<Rigidbody>().drag;
+    }
+
+    void FixedUpdate()
     {
         if (Input.GetAxisRaw("Interract") == 1 && keyUp)
         {
@@ -34,7 +50,7 @@ public class Interract: MonoBehaviour
         if (carrying && carriedObject != null)
         {
             carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            carriedObject.transform.position = Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * carrySpeed);
+            oldPos = carriedObject.transform.position = Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * carrySpeed);
         }
     }
 
@@ -59,6 +75,7 @@ public class Interract: MonoBehaviour
                 carriedObject.GetComponent<Rigidbody>().freezeRotation = true;
                 carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 carriedObject.transform.parent = transform;
+                transform.parent.GetComponent<Rigidbody>().drag += carriedObject.GetComponent<Rigidbody>().mass;
             }
             if (hit.transform.tag == "Interractable")
             {
@@ -69,10 +86,12 @@ public class Interract: MonoBehaviour
 
     void Drop()
     {
+        carriedObject.GetComponent<Rigidbody>().AddForce((carriedObject.transform.position - oldPos) / (Time.deltaTime * slow));
         carrying = false;
         carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
         carriedObject.transform.parent = null;
         carriedObject = null;
+        transform.parent.GetComponent<Rigidbody>().drag = defaultDrag;
     }
 }
