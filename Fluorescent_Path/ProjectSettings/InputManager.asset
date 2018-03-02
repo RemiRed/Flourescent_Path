@@ -68,7 +68,7 @@ InputManager:
     invert: 0
     type: 1
     axis: 1
-    joyNum: 1
+    joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal Movement
     descriptiveName: 
@@ -84,7 +84,7 @@ InputManager:
     invert: 0
     type: 2
     axis: 0
-    joyNum: 5
+    joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical Movement
     descriptiveName: 
@@ -100,7 +100,7 @@ InputManager:
     invert: 1
     type: 2
     axis: 1
-    joyNum: 5
+    joyNum: 0
   - serializedVersion: 3
     m_Name: Jump
     descriptiveName: 
@@ -132,7 +132,7 @@ InputManager:
     invert: 0
     type: 2
     axis: 3
-    joyNum: 5
+    joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical Camera
     descriptiveName: 
@@ -148,7 +148,7 @@ InputManager:
     invert: 1
     type: 2
     axis: 4
-    joyNum: 5
+    joyNum: 0
   - serializedVersion: 3
     m_Name: Interract
     descriptiveName: 
