@@ -6,10 +6,12 @@ public class Interract : MonoBehaviour
 {
     bool carrying = false;
     GameObject carriedObject;
-    [SerializeField]
+    
+	[SerializeField]
     [Range(0.001f, int.MaxValue)]
     float carryDistance;
-    [SerializeField]
+    
+	[SerializeField]
     [Range(0.001f, int.MaxValue)]
     float carrySpeed;
 
@@ -21,9 +23,9 @@ public class Interract : MonoBehaviour
     [Range(0.001f, int.MaxValue)]
     float slow;
 
-
     float defaultDrag;
-    private void Start()
+    
+	private void Start()
     {
         defaultDrag = transform.parent.GetComponent<Rigidbody>().drag;
     }
