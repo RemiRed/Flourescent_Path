@@ -190,7 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 32
   jumpSpeed: 55
-  maxJumpHeight: 2
+  maxJumpHeight: 1.85
   gravity: 120
   maxFallSpeed: 200
 --- !u!114 &114456303138999076
