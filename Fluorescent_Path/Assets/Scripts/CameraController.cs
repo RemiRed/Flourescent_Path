@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class CameraController : MonoBehaviour
+public class CameraController : NetworkBehaviour
 {
 
     Vector2 mouseLook;
@@ -21,7 +22,8 @@ public class CameraController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        character = this.transform.parent.gameObject;
+
+        character = transform.parent.gameObject;
     }
 
     // Update is called once per frame
@@ -34,9 +36,9 @@ public class CameraController : MonoBehaviour
         smoothV.y = Mathf.Lerp(smoothV.y, md.y, 1f / smoothing);
         mouseLook += smoothV;
 
-        transform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(-mouseLook.y,-visualAngleLimiter,visualAngleLimiter), Vector3.right);
+        transform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(-mouseLook.y, -visualAngleLimiter, visualAngleLimiter), Vector3.right);
         character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
-        
+
 
         if (mouseLook.y < -visualAngleLimiter)
             mouseLook.y = -visualAngleLimiter;

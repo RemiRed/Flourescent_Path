@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class RoomLoader : MonoBehaviour
+public class RoomLoader : NetworkBehaviour
 {
     [SerializeField]
     GameObject corridorPrefab;
@@ -24,9 +25,9 @@ public class RoomLoader : MonoBehaviour
 
     [SerializeField]
     GameObject currentCorridor;
-    
 
-
+    [SyncVar]
+    public bool clearedRoom;
 
     int nextRoomNumber;
 

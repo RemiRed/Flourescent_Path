@@ -70,7 +70,7 @@ InputManager:
     axis: 1
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Horizontal Movement
+    m_Name: Horizontal MovementDISABLED
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -86,7 +86,7 @@ InputManager:
     axis: 0
     joyNum: 5
   - serializedVersion: 3
-    m_Name: Vertical Movement
+    m_Name: Vertical MovementDISABLED
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 

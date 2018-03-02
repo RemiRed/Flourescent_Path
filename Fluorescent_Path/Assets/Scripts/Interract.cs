@@ -16,6 +16,8 @@ public class Interract : MonoBehaviour
 
     GameObject carriedObject;
     Transform carriedObjectParent;
+    GameObject lastInterractedObject;
+    bool oldInterraction = false;
     bool keyUp = true;
     bool carrying = false;
 
@@ -31,20 +33,25 @@ public class Interract : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetAxisRaw("Interract") == 1 && keyUp) //Checks if the key has been pressed and picks up, interracts, or drops an object
+        if (Input.GetAxisRaw("Interract") == 1) //Checks if the key has been pressed and picks up, interracts, or drops an object
         {
-            keyUp = false;
-            if (carrying)
+            if (!keyUp)
             {
-                Drop();
+                keyUp = false;
+                if (carrying)
+                {
+                    Drop();
+                }
+                else
+                {
+                    Pickup();
+                }
             }
-            else
-            {
-                PickupInterract();
-            }
+            oldInterraction = Interraction();
         }
         else if (Input.GetAxisRaw("Interract") == 0) //checks for a key release and allows the player to press the button again
         {
+            oldInterraction = false;
             keyUp = true;
         }
 
@@ -54,12 +61,17 @@ public class Interract : MonoBehaviour
             carriedObject.transform.localRotation = oldRot;
             oldPos = carriedObject.transform.position = Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * carrySpeed);
         }
+
+        if (lastInterractedObject != null && oldInterraction)
+        {
+
+        }
     }
 
 
 
 
-    void PickupInterract()
+    void Pickup()
     {
         int x = Screen.width / 2;
         int y = Screen.height / 2;
@@ -68,7 +80,6 @@ public class Interract : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, carryDistance)) //Finds an object that's within carry distance 
         {
-
             if (hit.transform.tag == "Movable") //If the object is movable it starts moving the object around
             {
                 carrying = true;
@@ -81,11 +92,27 @@ public class Interract : MonoBehaviour
                 oldRot = carriedObject.transform.localRotation;
                 transform.parent.GetComponent<Rigidbody>().drag += carriedObject.GetComponent<Rigidbody>().mass;
             }
+
+        }
+    }
+
+    bool Interraction()
+    {
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+
+        Ray ray = GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, carryDistance)) //Finds an object that's within carry distance 
+        {
             if (hit.transform.tag == "Interractable") //If the object is interractable, like a button, it'll interract with the object
             {
-                hit.transform.gameObject.GetComponent<Interractable>().Interract();
+                lastInterractedObject = hit.transform.gameObject;
+                lastInterractedObject.GetComponent<Interractable>().Interract();
+                return true;
             }
         }
+        return false;
     }
 
     void Drop() //drops a held object

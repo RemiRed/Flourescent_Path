@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23945255317958018}
   - component: {fileID: 114087305687234668}
   - component: {fileID: 54558727482679602}
+  - component: {fileID: 114009491018639088}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -121,8 +122,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1377563522295830}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -177,6 +178,38 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1973606981855708}
   m_Enabled: 1
+--- !u!114 &114009491018639088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1377563522295830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 57
+    i2: 220
+    i3: 145
+    i4: 86
+    i5: 12
+    i6: 62
+    i7: 20
+    i8: 89
+    i9: 85
+    i10: 78
+    i11: 136
+    i12: 67
+    i13: 188
+    i14: 203
+    i15: 174
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114087305687234668
 MonoBehaviour:
   m_ObjectHideFlags: 1
