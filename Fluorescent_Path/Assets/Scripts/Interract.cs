@@ -78,6 +78,7 @@ public class Interract : MonoBehaviour
                 carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 carriedObject.transform.parent = transform;
                 transform.parent.GetComponent<Rigidbody>().drag += carriedObject.GetComponent<Rigidbody>().mass;
+                Physics.IgnoreCollision(carriedObject.GetComponent<Collider>(), GetComponentInParent<Collider>(), true);
             }
             if (hit.transform.tag == "Interractable")
             {
@@ -93,6 +94,7 @@ public class Interract : MonoBehaviour
         carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
         carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
         carriedObject.transform.parent = null;
+        Physics.IgnoreCollision(carriedObject.GetComponent<Collider>(), GetComponentInParent<Collider>(), false);
         carriedObject = null;
         transform.parent.GetComponent<Rigidbody>().drag = defaultDrag;
     }
