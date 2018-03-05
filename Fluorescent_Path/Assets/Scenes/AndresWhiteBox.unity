@@ -458,12 +458,12 @@ Prefab:
     - target: {fileID: 114708461157903910, guid: 86a7ea8e11f7d574b8834d105469985a,
         type: 2}
       propertyPath: m_SelectedEdges.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114708461157903910, guid: 86a7ea8e11f7d574b8834d105469985a,
         type: 2}
       propertyPath: m_selectedTriangles.Array.size
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4955921000005136, guid: 86a7ea8e11f7d574b8834d105469985a, type: 2}
       propertyPath: m_LocalPosition.x
