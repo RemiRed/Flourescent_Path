@@ -30,7 +30,7 @@ public class NonogramAnswer : MonoBehaviour
         if (count == 5 && roomLoader != null)
         {
             exitDoor.SetActive(false);
-            roomLoader.Load();
+            roomLoader.CmdLoad();
             count = -10;
         }
     }

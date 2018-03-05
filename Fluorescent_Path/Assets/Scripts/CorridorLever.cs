@@ -24,7 +24,7 @@ public class CorridorLever : Interractable
         {
             if (roomLoader.clearedRoom)
             {
-                roomLoader.Load();
+                roomLoader.CmdLoad();
             }
             pulled = true;
             roomLoader.clearedRoom = true;
