@@ -3,28 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Interract : MonoBehaviour
-{
-    bool carrying = false;
-    GameObject carriedObject;
-    
-	[SerializeField]
-    [Range(0.001f, int.MaxValue)]
+{ 
+	GameObject carriedObject;							//The 
+
+	[SerializeField][Range(0.001f, int.MaxValue)]
     float carryDistance;
-    
-	[SerializeField]
-    [Range(0.001f, int.MaxValue)]
-    float carrySpeed;
+	[SerializeField][Range(0.001f, int.MaxValue)]
+    float normalizeSpeed;
+	[SerializeField][Range(0.001f, int.MaxValue)]
+	float slow;
 
-    bool keyUp = true;
+	Vector3 oldPos;
 
-    Vector3 oldPos;
+	float defaultDrag;
 
-    [SerializeField]
-    [Range(0.001f, int.MaxValue)]
-    float slow;
+	bool carrying = false;
 
-    float defaultDrag;
-    
 	private void Start()
     {
         defaultDrag = transform.parent.GetComponent<Rigidbody>().drag;
@@ -32,70 +26,66 @@ public class Interract : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetAxisRaw("Interract") == 1 && keyUp)
+		if (Input.GetButtonDown("Interract"))		
         {
-            keyUp = false;
             if (carrying)
             {
                 Drop();
             }
-            else
+     		else
             {
                 Pickup();
             }
         }
-        else if (Input.GetAxisRaw("Interract") == 0)
-        {
-            keyUp = true;
-        }
-
+			
         if (carrying && carriedObject != null)
         {
             carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            oldPos = carriedObject.transform.position = Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * carrySpeed);
+			oldPos = carriedObject.transform.position 
+			= Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * (carryDistance + carriedObject.GetComponent<Collider>().bounds.extents.x), Time.deltaTime * normalizeSpeed);
         }
     }
-
-
-
 
     void Pickup()
-    {
+    {	
+		//Defines a Raycast from camera view
         int x = Screen.width / 2;
         int y = Screen.height / 2;
-
         Ray ray = GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, carryDistance))
-        {
+		RaycastHit hit;
 
-            if (hit.transform.tag == "Movable")
+		if (Physics.Raycast (ray, out hit, carryDistance)) {
+			if (hit.transform.tag == "Movable") {
+				carrying = true;
+				carriedObject = hit.transform.gameObject;
+				carriedObject.transform.parent = transform;
+
+				carriedObject.GetComponent<Rigidbody> ().useGravity = false;
+				carriedObject.GetComponent<Rigidbody> ().freezeRotation = true;
+				transform.parent.GetComponent<Rigidbody> ().drag += carriedObject.GetComponent<Rigidbody> ().mass;
+				Physics.IgnoreCollision (carriedObject.GetComponent<Collider> (), GetComponentInParent<Collider> (), true);
+			}
+			//Calls method in interactible object if object is active
+			else if (hit.transform.tag == "Interractable" && hit.transform.GetComponent<Interractable>().active)
             {
-                carrying = true;
-                carriedObject = hit.transform.gameObject;
-                carriedObject.GetComponent<Rigidbody>().useGravity = false;
-                carriedObject.GetComponent<Rigidbody>().freezeRotation = true;
-                carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                carriedObject.transform.parent = transform;
-                transform.parent.GetComponent<Rigidbody>().drag += carriedObject.GetComponent<Rigidbody>().mass;
-                Physics.IgnoreCollision(carriedObject.GetComponent<Collider>(), GetComponentInParent<Collider>(), true);
+				hit.transform.GetComponent<Interractable>().Interract();
             }
-            if (hit.transform.tag == "Interractable")
-            {
-                hit.transform.gameObject.GetComponent<Interractable>().Interract();
-            }
+
         }
     }
 
+	//
     void Drop()
     {
-        carriedObject.GetComponent<Rigidbody>().AddForce((carriedObject.transform.position - oldPos) / (Time.deltaTime * slow));
-        carrying = false;
-        carriedObject.GetComponent<Rigidbody>().freezeRotation = false;
-        carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
-        carriedObject.transform.parent = null;
-        Physics.IgnoreCollision(carriedObject.GetComponent<Collider>(), GetComponentInParent<Collider>(), false);
-        carriedObject = null;
-        transform.parent.GetComponent<Rigidbody>().drag = defaultDrag;
+		carriedObject.GetComponent<Rigidbody>().useGravity = true;
+		carriedObject.GetComponent<Rigidbody>().freezeRotation = false; 
+		transform.parent.GetComponent<Rigidbody>().drag = defaultDrag;
+		Physics.IgnoreCollision(carriedObject.GetComponent<Collider>(), GetComponentInParent<Collider>(), false);
+
+		carriedObject.GetComponent<Rigidbody>().AddForce((carriedObject.transform.position - oldPos) / (Time.deltaTime * slow));
+
+		carriedObject.transform.parent = null; 
+		carriedObject = null;
+		carrying = false;
     }
 }

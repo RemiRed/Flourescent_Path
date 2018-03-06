@@ -6,6 +6,8 @@ public class Interractable : MonoBehaviour
 {
     [SerializeField]
     string methodName;
+
+	public bool active = true;
     
     public void Interract()
     {
