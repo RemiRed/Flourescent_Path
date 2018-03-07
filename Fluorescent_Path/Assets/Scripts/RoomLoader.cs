@@ -50,12 +50,12 @@ public class RoomLoader : NetworkBehaviour
         {
             int randomP1 = Random.Range(0, availableRooms.Count);
             roomsP1[i] = availableRooms[randomP1];
-            availableRooms.RemoveAt(randomP1);
             GameObject compatableRoom = roomsP1[i].GetComponent<RoomVariables>().compatibleRooms[Random.Range(0, roomsP1[i].GetComponent<RoomVariables>().compatibleRooms.Count)];
             roomsP2[i] = compatableRoom;
-            availableRooms.Remove(compatableRoom);
             roomsP1[i].GetComponent<RoomVariables>().pairedRoom = roomsP2[i];
             roomsP2[i].GetComponent<RoomVariables>().pairedRoom = roomsP1[i];
+            availableRooms.RemoveAt(randomP1);
+            availableRooms.Remove(compatableRoom);
         }
 
     }

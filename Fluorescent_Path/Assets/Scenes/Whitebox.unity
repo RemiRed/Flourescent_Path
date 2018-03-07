@@ -1546,6 +1546,7 @@ MonoBehaviour:
   compatibleRooms: []
   entryDoor: {fileID: 0}
   exitDoor: {fileID: 0}
+  pairedRoom: {fileID: 0}
 --- !u!4 &586365087
 Transform:
   m_ObjectHideFlags: 0
@@ -2423,6 +2424,7 @@ MonoBehaviour:
   compatibleRooms: []
   entryDoor: {fileID: 0}
   exitDoor: {fileID: 0}
+  pairedRoom: {fileID: 0}
 --- !u!1 &1273360299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3703,6 +3705,7 @@ MonoBehaviour:
   compatibleRooms: []
   entryDoor: {fileID: 0}
   exitDoor: {fileID: 0}
+  pairedRoom: {fileID: 0}
 --- !u!4 &1716670127
 Transform:
   m_ObjectHideFlags: 0
@@ -4231,6 +4234,7 @@ MonoBehaviour:
   compatibleRooms: []
   entryDoor: {fileID: 0}
   exitDoor: {fileID: 0}
+  pairedRoom: {fileID: 0}
 --- !u!1 &1943115328
 GameObject:
   m_ObjectHideFlags: 0
@@ -4422,6 +4426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975565567}
   - component: {fileID: 1975565566}
+  - component: {fileID: 1975565568}
   m_Layer: 0
   m_Name: RoomLoader
   m_TagString: Untagged
@@ -4449,12 +4454,13 @@ MonoBehaviour:
   availableRooms:
   - {fileID: 1641460689761824, guid: 9f0ee8aa795ac354d960e1e30d409711, type: 2}
   - {fileID: 1201029179849406, guid: 0677e3a1cedebc74fa12daa0906369b3, type: 2}
-  currentRoom: {fileID: 1113328384}
-  currentCorridor: {fileID: 1913261785}
+  currentRoomP1: {fileID: 0}
+  currentRoomP2: {fileID: 0}
+  currentCorridorP1: {fileID: 0}
+  currentCorridorP2: {fileID: 0}
   clearedRoom: 0
-  doors:
-  - {fileID: 345430659}
-  - {fileID: 509521041}
+  doorsP1: []
+  doorsP2: []
 --- !u!4 &1975565567
 Transform:
   m_ObjectHideFlags: 0
@@ -4468,6 +4474,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1975565568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975565565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 1
+  m_LocalPlayerAuthority: 0
 --- !u!1001 &1976511469
 Prefab:
   m_ObjectHideFlags: 0
