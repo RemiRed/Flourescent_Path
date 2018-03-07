@@ -11,8 +11,6 @@ public class CameraController : MonoBehaviour
     float sensitivity;
     [SerializeField]
     float smoothing;
-
-
     [SerializeField]
     float visualAngleLimiter = 80;
 

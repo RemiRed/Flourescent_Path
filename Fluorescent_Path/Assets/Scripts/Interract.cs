@@ -11,7 +11,7 @@ public class Interract : MonoBehaviour
 	[SerializeField][Range(0.001f, int.MaxValue)]
     float normalizeSpeed;								//The speed carried objects return to a normalized position after being dislocated 
 	[SerializeField][Range(0.001f, int.MaxValue)]
-	float slow;
+	float slow;											//Impacts force applied to carried object when dropped
 
 	Vector3 oldPos;										//The carried objects previous position. Used to calculate position normalization and throwing 
 
@@ -38,7 +38,8 @@ public class Interract : MonoBehaviour
                 Pickup();
             }
         }
-			
+
+		//Updates to the carried object
         if (carrying && carriedObject != null)
         {
             carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
