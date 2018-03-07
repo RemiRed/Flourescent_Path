@@ -31,6 +31,7 @@ public class PlayerCommands : NetworkBehaviour
     [Command]
     public void CmdCorridorLever()
     {
+        print(roomLoader.gameObject.name);
         if (roomLoader.clearedRoom)
         {
             roomLoader.CmdLoad();
