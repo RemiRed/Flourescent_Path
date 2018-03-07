@@ -53,6 +53,7 @@ public class Interract : MonoBehaviour
         {
             carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             oldPos = carriedObject.transform.position = Vector3.Lerp(carriedObject.transform.position, transform.position + transform.forward * carryDistance, Time.deltaTime * carrySpeed);
+            carriedObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
     }
 
