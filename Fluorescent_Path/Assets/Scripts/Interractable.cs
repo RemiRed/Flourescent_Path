@@ -1,14 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Interractable : MonoBehaviour
+public class Interractable : NetworkBehaviour
 {
     [SerializeField]
-    string methodName;
-    
-    public void Interract()
+    string interractMethodName,stopInterractMethodName;
+    [SerializeField]
+    protected float delay;
+
+    public void Interract() //Calls the interractable objects method that happens when it's interracted with after a delay
     {
-        Invoke(methodName, 0);        
+        Invoke(interractMethodName, delay);
+    }
+
+    public void StopInterract()
+    {
+        if (stopInterractMethodName != null)
+        {
+            Invoke(stopInterractMethodName, delay);
+        }
     }
 }

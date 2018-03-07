@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonTest : Interractable
+public class ButtonStartRoom : Interractable
 {
+    [SerializeField]
+    GameObject startRoomDoor;
 
-    public GameObject exitDoor;
-    public GameObject entryDoor;
     [SerializeField]
     RoomLoader roomLoader;
 
@@ -14,32 +14,21 @@ public class ButtonTest : Interractable
     float doorDelay;
 
     bool activated = false;
-    public void Press()
+    void Press()
     {
         if (activated)
         {
             return;
         }
-        transform.localScale = new Vector3(.5f, .3f, .08f);
+        activated = true;
         StartCoroutine(OpenDoor());
-        if (roomLoader != null)
-        {
-            roomLoader.CmdLoad();
-        }
-    }
-
-    void Unload()
-    {
-        exitDoor.SetActive(true);
-        roomLoader.UnloadCorridor();
-
     }
 
     IEnumerator OpenDoor()
     {
         yield return new WaitForSeconds(doorDelay);
-        exitDoor.SetActive(false);
-
+        startRoomDoor.SetActive(false);
         yield return null;
     }
+
 }
