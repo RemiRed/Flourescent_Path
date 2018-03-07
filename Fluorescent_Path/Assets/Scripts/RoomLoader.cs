@@ -39,6 +39,12 @@ public class RoomLoader : NetworkBehaviour
 
     private void Start()
     {
+        CmdRandomizeRooms();
+    }
+
+    [Command]
+    void CmdRandomizeRooms()
+    {
         roomsP1 = new GameObject[numberOfRooms];
         for (int i = 0; i < roomsP1.Length; i++)
         {
@@ -48,9 +54,11 @@ public class RoomLoader : NetworkBehaviour
             GameObject compatableRoom = roomsP1[i].GetComponent<RoomVariables>().compatibleRooms[Random.Range(0, roomsP1[i].GetComponent<RoomVariables>().compatibleRooms.Count)];
             roomsP2[i] = compatableRoom;
             availableRooms.Remove(compatableRoom);
+            roomsP1[i].GetComponent<RoomVariables>().pairedRoom = roomsP2[i];
+            roomsP2[i].GetComponent<RoomVariables>().pairedRoom = roomsP1[i];
         }
-    }
 
+    }
     [Command]
     public void CmdLoad() //Loads the next room, or last room if the last room is the next room
     {
