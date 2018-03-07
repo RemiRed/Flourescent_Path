@@ -16,7 +16,9 @@ public class RoomLoader : NetworkBehaviour
 
     [SerializeField]
     int numberOfRooms;
+
     GameObject[] roomsP1, roomsP2;
+
     [SerializeField]
     List<GameObject> availableRooms = new List<GameObject>();
 
@@ -28,10 +30,7 @@ public class RoomLoader : NetworkBehaviour
 
     [SyncVar]
     public bool clearedRoom;
-
-    [SyncVar(hook = "LoadNextRoom")]
-    bool loadNextRoom;
-
+    
     int nextRoomNumber;
 
     [SerializeField]
@@ -72,7 +71,7 @@ public class RoomLoader : NetworkBehaviour
     {
         if (nextRoomNumber < roomsP1.Length)
         {
-            loadNextRoom = true;
+            RpcLoadNextRoom();
         }
         else
         {
@@ -113,16 +112,13 @@ public class RoomLoader : NetworkBehaviour
         doorsP2.Add(Instantiate(doorPrefab, currentCorridorP2.transform.position + new Vector3(0, 1.25f, (finalRoomPrefab.GetComponent<RoomVariables>().length * 2 + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
 
     }
-    
-    void LoadNextRoom(bool loadNextRoom) //Loads the next room
+
+    [ClientRpc]
+    void RpcLoadNextRoom() //Loads the next room
     {
-        if (!loadNextRoom)
-        {
-            return;
-        }
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
-        
+
         currentRoomP1 = Instantiate(roomsP1[nextRoomNumber], currentCorridorP1.transform.position + new Vector3(0, 0, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
         currentRoomP2 = Instantiate(roomsP2[nextRoomNumber], currentCorridorP2.transform.position + new Vector3(0, 0, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
 
