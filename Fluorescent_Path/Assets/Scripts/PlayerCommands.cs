@@ -18,8 +18,21 @@ public class PlayerCommands : NetworkBehaviour
     {
         if (roomLoader.clearedRoom)
         {
-            roomLoader.CmdLoad();
+            CmdLoad();
         }
         roomLoader.clearedRoom = true;
+    }
+
+    [Command]
+    public void CmdLoad() //Loads the next room, or last room if the last room is the next room
+    {
+        if (roomLoader.nextRoomNumber < roomLoader.numberOfRooms)
+        {
+            roomLoader.RpcLoadNextRoom();
+        }
+        else
+        {
+            roomLoader.RpcLoadFinalRoom();
+        }
     }
 }

@@ -14,8 +14,7 @@ public class RoomLoader : NetworkBehaviour
     [SerializeField]
     GameObject doorPrefab;
 
-    [SerializeField]
-    int numberOfRooms;
+    public int numberOfRooms;
 
     GameObject[] roomsP1, roomsP2;
 
@@ -30,8 +29,8 @@ public class RoomLoader : NetworkBehaviour
 
     [SyncVar]
     public bool clearedRoom;
-    
-    int nextRoomNumber;
+
+    public int nextRoomNumber;
 
     [SerializeField]
     List<GameObject> doorsP1 = new List<GameObject>();
@@ -66,18 +65,7 @@ public class RoomLoader : NetworkBehaviour
 
     }
 
-    [Command]
-    public void CmdLoad() //Loads the next room, or last room if the last room is the next room
-    {
-        if (nextRoomNumber < roomsP1.Length)
-        {
-            RpcLoadNextRoom();
-        }
-        else
-        {
-            LoadFinalRoom();
-        }
-    }
+
 
     public void UnloadCorridor() //Unloads the previous corridor. Call this after entering the next room
     {
@@ -100,7 +88,8 @@ public class RoomLoader : NetworkBehaviour
 
     }
 
-    void LoadFinalRoom() //Loads the final room
+    [ClientRpc]
+    public void RpcLoadFinalRoom() //Loads the final room
     {
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
@@ -114,7 +103,7 @@ public class RoomLoader : NetworkBehaviour
     }
 
     [ClientRpc]
-    void RpcLoadNextRoom() //Loads the next room
+    public void RpcLoadNextRoom() //Loads the next room
     {
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
