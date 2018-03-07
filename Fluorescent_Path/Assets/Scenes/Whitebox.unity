@@ -1645,8 +1645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88b56e7f46f1fc4db43ab35f353e0ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interractMethodName: Pull
-  stopInterractMethodName: Release
+  interractMethodName: CmdPull
+  stopInterractMethodName: CmdRelease
   delay: 0
   exitDoor: {fileID: 509521041}
   entryDoor: {fileID: 345430659}
@@ -2216,8 +2216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88b56e7f46f1fc4db43ab35f353e0ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interractMethodName: Pull
-  stopInterractMethodName: Release
+  interractMethodName: CmdPull
+  stopInterractMethodName: CmdRelease
   delay: 0
   exitDoor: {fileID: 315380062}
   entryDoor: {fileID: 1999901214}

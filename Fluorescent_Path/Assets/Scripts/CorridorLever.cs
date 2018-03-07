@@ -18,21 +18,28 @@ public class CorridorLever : Interractable
     float leverDelay;
 
     bool pulled = false;
-    void Pull()
+
+    [Command]
+    void CmdPull()
     {
+        print(roomLoader.clearedRoom);
         if (!pulled)
         {
+            print("Pulled");
             if (roomLoader.clearedRoom)
             {
+                print("Load");
                 roomLoader.CmdLoad();
             }
             pulled = true;
             roomLoader.clearedRoom = true;
         }
     }
-    
-    void Release()
+
+    [Command]
+    void CmdRelease()
     {
+        print("Release");
         pulled = false;
         roomLoader.clearedRoom = false;
     }
