@@ -15,9 +15,7 @@ public class ButtonStartRoom : Interractable
     float doorDelay;
 
     bool activated = false;
-
-    [SyncVar(hook = "Test")]
-    bool testing = false;
+    
 
     void Press()
     {
@@ -27,19 +25,10 @@ public class ButtonStartRoom : Interractable
         }
         activated = true;
         StartCoroutine(OpenDoor());
-        CmdPress();
+        player.GetComponent<PlayerCommands>().CmdTest();
     }
 
-    [Command]
-    void CmdPress()
-    {
-        testing = true;
-    }
-
-    void Test(bool testing)
-    {
-        print(testing);
-    }
+    
 
     IEnumerator OpenDoor()
     {
