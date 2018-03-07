@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 public class Interractable : NetworkBehaviour
 {
     [SerializeField]
+<<<<<<< HEAD
     string interractMethodName,stopInterractMethodName;
     [SerializeField]
     protected float delay;
@@ -16,6 +17,13 @@ public class Interractable : NetworkBehaviour
     }
 
     public void StopInterract()
+=======
+    string methodName;
+
+	public bool active = true;
+    
+    public void Interract()
+>>>>>>> 55791796289248d34a93fbc06a434f3974eebc34
     {
         if (stopInterractMethodName != null)
         {
