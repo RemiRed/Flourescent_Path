@@ -24,10 +24,8 @@ public class CorridorLever : Interractable
         if (!pulled)
         {
             pulled = true;
-            if (playerCmd.CmdCorridorLever())
-            {
-                StartCoroutine(OpenDoor());
-            }
+            playerCmd.CmdCorridorLever();
+            StartCoroutine(OpenDoor());
         }
     }
 
