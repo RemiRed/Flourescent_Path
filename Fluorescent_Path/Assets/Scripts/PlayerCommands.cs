@@ -14,13 +14,15 @@ public class PlayerCommands : NetworkBehaviour
     }
 
     [Command]
-    public void CmdCorridorLever()
+    public bool CmdCorridorLever()
     {
-        print(roomLoader.gameObject.name);
+        bool tempBool = false;
         if (roomLoader.clearedRoom)
         {
             roomLoader.CmdLoad();
+            tempBool = true;
         }
         roomLoader.clearedRoom = true;
+        return tempBool;
     }
 }

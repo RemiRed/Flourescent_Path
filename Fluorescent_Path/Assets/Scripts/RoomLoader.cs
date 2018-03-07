@@ -69,7 +69,7 @@ public class RoomLoader : NetworkBehaviour
     {
         if (nextRoomNumber < roomsP1.Length)
         {
-            LoadNextRoom();
+            RpcLoadNextRoom();
         }
         else
         {
@@ -111,15 +111,14 @@ public class RoomLoader : NetworkBehaviour
 
     }
 
-    void LoadNextRoom() //Loads the next room
+    [ClientRpc]
+    void RpcLoadNextRoom() //Loads the next room
     {
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
-
-        print(roomsP1.Length);
-        print(roomsP2.Length);
+        
         currentRoomP1 = Instantiate(roomsP1[nextRoomNumber], currentCorridorP1.transform.position + new Vector3(0, 0, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
-        currentRoomP2 = Instantiate(roomsP2[nextRoomNumber], currentCorridorP1.transform.position + new Vector3(0, 0, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
+        currentRoomP2 = Instantiate(roomsP2[nextRoomNumber], currentCorridorP2.transform.position + new Vector3(0, 0, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
 
         doorsP1.Add(Instantiate(doorPrefab, currentCorridorP1.transform.position + new Vector3(0, 1.25f, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length * 2 + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
         doorsP2.Add(Instantiate(doorPrefab, currentCorridorP2.transform.position + new Vector3(0, 1.25f, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length * 2 + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));

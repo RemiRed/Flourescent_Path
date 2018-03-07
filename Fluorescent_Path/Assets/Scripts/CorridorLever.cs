@@ -18,13 +18,16 @@ public class CorridorLever : Interractable
     float leverDelay;
 
     bool pulled = false;
-    
+
     void Pull()
     {
         if (!pulled)
         {
             pulled = true;
-            playerCmd.CmdCorridorLever();
+            if (playerCmd.CmdCorridorLever())
+            {
+                StartCoroutine(OpenDoor());
+            }
         }
     }
 
