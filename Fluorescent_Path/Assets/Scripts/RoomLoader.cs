@@ -112,8 +112,8 @@ public class RoomLoader : NetworkBehaviour
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
 
-        currentRoomP1 = Instantiate(roomsP1[nextRoomNumber], currentCorridorP1.transform.position + new Vector3(0, 0, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
-        currentRoomP2 = Instantiate(roomsP2[nextRoomNumber], currentCorridorP2.transform.position + new Vector3(0, 0, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
+        currentRoomP1 = Instantiate(room1, currentCorridorP1.transform.position + new Vector3(0, 0, (roomP1.GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
+        currentRoomP2 = Instantiate(room2, currentCorridorP2.transform.position + new Vector3(0, 0, (roomP2.GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
 
         doorsP1.Add(Instantiate(doorPrefab, currentCorridorP1.transform.position + new Vector3(0, 1.25f, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length * 2 + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
         doorsP2.Add(Instantiate(doorPrefab, currentCorridorP2.transform.position + new Vector3(0, 1.25f, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length * 2 + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
@@ -121,8 +121,11 @@ public class RoomLoader : NetworkBehaviour
         nextRoomNumber++;
         if (isServer)
         {
-            roomP1 = roomsP1[nextRoomNumber];
-            roomP2 = roomsP2[nextRoomNumber];
+            if (nextRoomNumber < roomsP1.Length)
+            {
+                roomP1 = roomsP1[nextRoomNumber];
+                roomP2 = roomsP2[nextRoomNumber];
+            }
         }
     }
 
