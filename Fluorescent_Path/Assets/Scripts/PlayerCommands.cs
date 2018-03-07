@@ -5,10 +5,17 @@ using UnityEngine.Networking;
 
 public class PlayerCommands : NetworkBehaviour
 {
+    [SyncVar(hook = "TestHook")]
+    string test;
 
     [Command]
     public void CmdTest()
     {
-        print("Hej!");
+        test = "Hej!";
+    }
+
+    void TestHook(string test)
+    {
+        print(test);
     }
 }
