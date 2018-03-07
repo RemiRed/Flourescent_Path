@@ -38,13 +38,18 @@ public class RoomLoader : NetworkBehaviour
     [SerializeField]
     List<GameObject> doorsP2 = new List<GameObject>();
 
+    [SyncVar]
+    public GameObject roomP1, roomP2;
+
     private void Start()
     {
-       	CmdRandomizeRooms();
+        if (isServer)
+        {
+            RandomizeRooms();
+        }
     }
 
-    [Command]
-    void CmdRandomizeRooms()
+    void RandomizeRooms()
     {
         roomsP1 = new GameObject[numberOfRooms];
         roomsP2 = new GameObject[numberOfRooms];
@@ -60,6 +65,8 @@ public class RoomLoader : NetworkBehaviour
             availableRooms.Remove(compatableRoom);
         }
 
+        roomP1 = roomsP1[0];
+        roomP2 = roomsP2[0];
     }
 
 
@@ -100,7 +107,7 @@ public class RoomLoader : NetworkBehaviour
     }
 
     [ClientRpc]
-    public void RpcLoadNextRoom() //Loads the next room
+    public void RpcLoadNextRoom(GameObject room1, GameObject room2) //Loads the next room
     {
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
@@ -112,6 +119,11 @@ public class RoomLoader : NetworkBehaviour
         doorsP2.Add(Instantiate(doorPrefab, currentCorridorP2.transform.position + new Vector3(0, 1.25f, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length * 2 + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
 
         nextRoomNumber++;
+        if (isServer)
+        {
+            roomP1 = roomsP1[nextRoomNumber];
+            roomP2 = roomsP2[nextRoomNumber];
+        }
     }
 
 }
