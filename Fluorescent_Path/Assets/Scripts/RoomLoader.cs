@@ -41,10 +41,7 @@ public class RoomLoader : NetworkBehaviour
 
     private void Start()
     {
-        if (isServer)
-        {
-            CmdRandomizeRooms();
-        }
+       	CmdRandomizeRooms();
     }
 
     [Command]
