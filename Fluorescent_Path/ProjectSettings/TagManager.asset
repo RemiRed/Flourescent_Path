@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Movable
   - Interractable
+  - RoomLoader
   layers:
   - Default
   - TransparentFX

@@ -250,6 +250,7 @@ MonoBehaviour:
   interractMethodName: Press
   stopInterractMethodName: 
   delay: 0
+  playerCmd: {fileID: 0}
   startRoomDoor: {fileID: 345430659}
   roomLoader: {fileID: 1975565566}
   doorDelay: 0.1
@@ -1679,9 +1680,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88b56e7f46f1fc4db43ab35f353e0ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interractMethodName: CmdPull
-  stopInterractMethodName: CmdRelease
+  interractMethodName: Pull
+  stopInterractMethodName: Release
   delay: 0
+  playerCmd: {fileID: 0}
   exitDoor: {fileID: 509521041}
   entryDoor: {fileID: 345430659}
   roomLoader: {fileID: 1975565566}
@@ -2048,6 +2050,7 @@ MonoBehaviour:
   interractMethodName: Press
   stopInterractMethodName: 
   delay: 0
+  playerCmd: {fileID: 0}
   startRoomDoor: {fileID: 1999901214}
   roomLoader: {fileID: 1975565566}
   doorDelay: 0.1
@@ -2316,9 +2319,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88b56e7f46f1fc4db43ab35f353e0ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interractMethodName: CmdPull
-  stopInterractMethodName: CmdRelease
+  interractMethodName: Pull
+  stopInterractMethodName: Release
   delay: 0
+  playerCmd: {fileID: 0}
   exitDoor: {fileID: 315380062}
   entryDoor: {fileID: 1999901214}
   roomLoader: {fileID: 1975565566}

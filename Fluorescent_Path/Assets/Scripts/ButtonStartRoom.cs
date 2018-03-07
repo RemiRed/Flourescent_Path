@@ -25,7 +25,7 @@ public class ButtonStartRoom : Interractable
         }
         activated = true;
         StartCoroutine(OpenDoor());
-        player.GetComponent<PlayerCommands>().CmdTest();
+        playerCmd.CmdTest();
     }
 
     

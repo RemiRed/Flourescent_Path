@@ -108,7 +108,7 @@ public class Interract : MonoBehaviour
             if (hit.transform.tag == "Interractable") //If the object is interractable, like a button, it'll interract with the object
             {
                 lastInterractedObject = hit.transform.gameObject;
-                lastInterractedObject.GetComponent<Interractable>().player = transform.parent.gameObject;
+                lastInterractedObject.GetComponent<Interractable>().playerCmd = transform.parent.gameObject.GetComponent<PlayerCommands>();
                 lastInterractedObject.GetComponent<Interractable>().Interract();
                 return true;
             }

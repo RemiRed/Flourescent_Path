@@ -18,30 +18,19 @@ public class CorridorLever : Interractable
     float leverDelay;
 
     bool pulled = false;
-
-    [Command]
-    void CmdPull()
+    
+    void Pull()
     {
-        print(roomLoader.clearedRoom);
         if (!pulled)
         {
-            print("Pulled");
-            if (roomLoader.clearedRoom)
-            {
-                print("Load");
-                roomLoader.CmdLoad();
-            }
             pulled = true;
-            roomLoader.clearedRoom = true;
+            playerCmd.CmdCorridorLever();
         }
     }
 
-    [Command]
-    void CmdRelease()
+    void Release()
     {
-        print("Release");
-        pulled = false;
-        roomLoader.clearedRoom = false;
+
     }
 
     IEnumerator OpenDoor()
