@@ -5,27 +5,12 @@ using UnityEngine.Networking;
 
 public class PlayerCommands : NetworkBehaviour
 {
+    [SerializeField]
+    RoomLoader roomLoader;
 
     private void Start()
     {
         roomLoader = GameObject.FindGameObjectWithTag("RoomLoader").GetComponent<RoomLoader>();
-    }
-
-    [SerializeField]
-    RoomLoader roomLoader;
-
-    [SyncVar(hook = "TestHook")]
-    string test;
-
-    [Command]
-    public void CmdTest()
-    {
-        test = "Hej!";
-    }
-
-    void TestHook(string test)
-    {
-        print(test);
     }
 
     [Command]

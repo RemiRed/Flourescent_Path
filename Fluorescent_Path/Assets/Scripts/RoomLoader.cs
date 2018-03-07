@@ -63,6 +63,7 @@ public class RoomLoader : NetworkBehaviour
         }
 
     }
+
     [Command]
     public void CmdLoad() //Loads the next room, or last room if the last room is the next room
     {
@@ -115,6 +116,8 @@ public class RoomLoader : NetworkBehaviour
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
 
+        print(roomsP1.Length);
+        print(roomsP2.Length);
         currentRoomP1 = Instantiate(roomsP1[nextRoomNumber], currentCorridorP1.transform.position + new Vector3(0, 0, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
         currentRoomP2 = Instantiate(roomsP2[nextRoomNumber], currentCorridorP1.transform.position + new Vector3(0, 0, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
 
