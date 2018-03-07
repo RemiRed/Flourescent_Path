@@ -49,6 +49,7 @@ public class RoomLoader : NetworkBehaviour
     void CmdRandomizeRooms()
     {
         roomsP1 = new GameObject[numberOfRooms];
+        roomsP2 = new GameObject[numberOfRooms];
         for (int i = 0; i < roomsP1.Length; i++)
         {
             int randomP1 = Random.Range(0, availableRooms.Count);

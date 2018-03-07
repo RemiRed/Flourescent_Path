@@ -2664,9 +2664,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length: 20
-  compatibleRooms: []
+  compatibleRooms:
+  - {fileID: 1641460689761824, guid: 9f0ee8aa795ac354d960e1e30d409711, type: 2}
   entryDoor: {fileID: 0}
   exitDoor: {fileID: 0}
+  pairedRoom: {fileID: 1641460689761824, guid: 9f0ee8aa795ac354d960e1e30d409711, type: 2}
 --- !u!114 &114292709100956702
 MonoBehaviour:
   m_ObjectHideFlags: 1

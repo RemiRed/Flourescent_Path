@@ -4459,8 +4459,12 @@ MonoBehaviour:
   currentCorridorP1: {fileID: 0}
   currentCorridorP2: {fileID: 0}
   clearedRoom: 0
-  doorsP1: []
-  doorsP2: []
+  doorsP1:
+  - {fileID: 1999901214}
+  - {fileID: 315380062}
+  doorsP2:
+  - {fileID: 345430659}
+  - {fileID: 509521041}
 --- !u!4 &1975565567
 Transform:
   m_ObjectHideFlags: 0
