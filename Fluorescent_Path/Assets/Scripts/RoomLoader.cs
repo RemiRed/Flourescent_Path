@@ -114,8 +114,12 @@ public class RoomLoader : NetworkBehaviour
 
     }
     
-    void LoadNextRoom() //Loads the next room
+    void LoadNextRoom(bool loadNextRoom) //Loads the next room
     {
+        if (!loadNextRoom)
+        {
+            return;
+        }
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
         
