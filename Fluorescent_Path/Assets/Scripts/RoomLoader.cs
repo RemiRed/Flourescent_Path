@@ -29,6 +29,9 @@ public class RoomLoader : NetworkBehaviour
     [SyncVar]
     public bool clearedRoom;
 
+    [SyncVar(hook = "LoadNextRoom")]
+    bool loadNextRoom;
+
     int nextRoomNumber;
 
     [SerializeField]
@@ -69,7 +72,7 @@ public class RoomLoader : NetworkBehaviour
     {
         if (nextRoomNumber < roomsP1.Length)
         {
-            RpcLoadNextRoom();
+            loadNextRoom = true;
         }
         else
         {
@@ -110,9 +113,8 @@ public class RoomLoader : NetworkBehaviour
         doorsP2.Add(Instantiate(doorPrefab, currentCorridorP2.transform.position + new Vector3(0, 1.25f, (finalRoomPrefab.GetComponent<RoomVariables>().length * 2 + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
 
     }
-
-    [ClientRpc]
-    void RpcLoadNextRoom() //Loads the next room
+    
+    void LoadNextRoom() //Loads the next room
     {
         Destroy(currentRoomP1);
         Destroy(currentRoomP2);
