@@ -63,8 +63,12 @@ public class RoomLoader : NetworkBehaviour
 
     public void UnloadCorridor() //Unloads the previous corridor. Call this after entering the next room
     {
-        Destroy(currentCorridorP1);
-        Destroy(currentCorridorP2);
+        if (!isServer)
+        {
+            return;
+        }
+        NetworkServer.Destroy(currentCorridorP1);
+        NetworkServer.Destroy(currentCorridorP2);
         if (nextRoomNumber < roomsP1.Length)
         {
             currentCorridorP1 = Instantiate(corridorPrefab, currentCorridorP1.transform.position + new Vector3(0, 0, currentRoomP1.GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length), new Quaternion());
@@ -75,9 +79,9 @@ public class RoomLoader : NetworkBehaviour
             currentCorridorP2 = Instantiate(corridorPrefab, currentCorridorP2.transform.position + new Vector3(0, 0, currentRoomP2.GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length), new Quaternion());
         }
 
-        Destroy(doorsP1[0]);
+        NetworkServer.Destroy(doorsP1[0]);
         doorsP1.RemoveAt(0);
-        Destroy(doorsP2[0]);
+        NetworkServer.Destroy(doorsP2[0]);
         doorsP2.RemoveAt(0);
 
     }
@@ -88,8 +92,8 @@ public class RoomLoader : NetworkBehaviour
         {
             return;
         }
-        Destroy(currentRoomP1);
-        Destroy(currentRoomP2);
+        NetworkServer.Destroy(currentRoomP1);
+        NetworkServer.Destroy(currentRoomP2);
 
         currentRoomP1 = Instantiate(finalRoomPrefab, currentCorridorP1.transform.position + new Vector3(0, 0, (finalRoomPrefab.GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
         currentRoomP2 = Instantiate(finalRoomPrefab, currentCorridorP2.transform.position + new Vector3(0, 0, (finalRoomPrefab.GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
@@ -109,8 +113,8 @@ public class RoomLoader : NetworkBehaviour
         {
             return;
         }
-        Destroy(currentRoomP1);
-        Destroy(currentRoomP2);
+        NetworkServer.Destroy(currentRoomP1);
+        NetworkServer.Destroy(currentRoomP2);
 
         currentRoomP1 = Instantiate(roomsP1[nextRoomNumber], currentCorridorP1.transform.position + new Vector3(0, 0, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
         currentRoomP2 = Instantiate(roomsP2[nextRoomNumber], currentCorridorP2.transform.position + new Vector3(0, 0, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion());
