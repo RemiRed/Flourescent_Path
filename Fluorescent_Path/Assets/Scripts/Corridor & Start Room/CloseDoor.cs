@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CloseDoor : MonoBehaviour
 {
-
-    public GameObject player;
+    
     RoomVariables room;
     [SerializeField]
     RoomLoader roomLoader;
@@ -15,9 +14,9 @@ public class CloseDoor : MonoBehaviour
         room = transform.parent.GetComponent<RoomVariables>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider c)
     {
-        if (player.GetComponent<Collider>() == other)
+        if (c.tag == "Player")
         {
             Unload();
         }

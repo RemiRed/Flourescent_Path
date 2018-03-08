@@ -64,7 +64,7 @@ public class Interract : MonoBehaviour
 
         if (lastInterractedObject != null && oldInterraction)
         {
-
+            lastInterractedObject.GetComponent<Interractable>().StopInterract();
         }
     }
 
