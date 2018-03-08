@@ -5,6 +5,17 @@ using UnityEngine.Networking;
 
 public class CharacterScript : NetworkBehaviour
 {
+
+	//Temporary testing shiuff//
+
+	public GameObject bulletPrefab;
+	public Transform bulletSpawn;
+
+	//temporary shiuff ends here//
+
+
+
+
     [SerializeField]
     float movementSpeed = 32;
     [SerializeField]
@@ -30,7 +41,6 @@ public class CharacterScript : NetworkBehaviour
 	public override void OnStartLocalPlayer(){
 
 		GetComponent<MeshRenderer> ().material.color = Color.blue;
-
 	}
 
     // Use this for initialization
@@ -42,13 +52,10 @@ public class CharacterScript : NetworkBehaviour
         }
         else
         {
-
-			Debug.Log ("Am I a local player??");
             Cursor.lockState = CursorLockMode.Locked;
             rigby = GetComponent<Rigidbody>();
             collider = GetComponent<Collider>();
         }
-
     }
 
     // Update is called once per frame
@@ -58,6 +65,17 @@ public class CharacterScript : NetworkBehaviour
 		{
 			return;
 		}
+
+		//Temp//
+
+		if (Input.GetKeyDown (KeyCode.R)) {
+
+			CmdFire ();
+		}
+
+
+		//Temp end//
+
             //Disables the annoying cursor lock
     	if (Input.GetKeyDown("escape"))
     		Cursor.lockState = CursorLockMode.None;
@@ -66,6 +84,17 @@ public class CharacterScript : NetworkBehaviour
   
     }
 
+	[Command]
+	void CmdFire(){
+
+		GameObject bullet = Instantiate (bulletPrefab,bulletSpawn.position,bulletSpawn.rotation);
+		bullet.GetComponent<Rigidbody> ().velocity = bullet.transform.forward * 6;
+		NetworkServer.Spawn (bullet);
+		Destroy (bullet, 2f);
+
+		Debug.Log ("Bullet Fired");
+	}
+
     void FixedUpdate()
     {
         if (isLocalPlayer)
@@ -73,7 +102,7 @@ public class CharacterScript : NetworkBehaviour
             //Executes all movements determined by active axis and currenty jump value 
             rigby.AddRelativeForce(new Vector3(
               	/* X */     Input.GetAxisRaw("Horizontal Movement") * movementSpeed,
-               	/* Y */     Mathf.Max((curJumpPower), -maxFallSpeed),
+				/* Y */     Mathf.Max((curJumpPower), -maxFallSpeed),
           		/* Z */     Input.GetAxisRaw("Vertical Movement") * movementSpeed)
              	/* All */   * 100 * Time.deltaTime, ForceMode.Force);
         }
@@ -81,18 +110,14 @@ public class CharacterScript : NetworkBehaviour
 
     void Jump()
     {
-		
-		
         if (IsGrounded())
         {
 
             if (Input.GetButtonDown("Jump"))
             {
-				Debug.Log("Pressing button?");
                 //Initiates player jump after jump button is pressed
                 curJumpPower = jumpSpeed;
                 jumping = true;
-                Debug.Log(jumpSpeed + " : " + jumping);
 
                 //Sets base for calculating when jump reaches maximum jump height
                 jumpStartY = transform.position.y;
@@ -100,26 +125,21 @@ public class CharacterScript : NetworkBehaviour
             }
             else if (!jumping)
             {
-				Debug.Log("Landing?");
                 //Sets jump value to a neutral value as long as the player is grounded and not jumping
                 curJumpPower = 0;
             }
-
         }
         else
         {
-			Debug.Log("Gravity is falling?");
             //Increases fall speed while not grounded
             curJumpPower -= gravity * Time.deltaTime;
         }
 
         if (jumping)
-        {
-
+        {	
             //Cancels jump if jump is interupted or reaches jumping limit. 
             if (Input.GetButtonUp("Jump") || transform.position.y >= jumpStartY + maxJumpHeight || HitCeiling())
             {
-
                 jumping = false;
                 curJumpPower = Mathf.Min(curJumpPower, 0);
             }
