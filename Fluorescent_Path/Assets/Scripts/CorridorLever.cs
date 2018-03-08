@@ -38,6 +38,7 @@ public class CorridorLever : Interractable
     {
         yield return new WaitForSeconds(doorDelay);
         exitDoor.SetActive(false);
+        entryDoor.SetActive(true);
         yield return null;
     }
 

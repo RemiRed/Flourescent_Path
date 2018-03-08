@@ -1687,7 +1687,7 @@ MonoBehaviour:
   exitDoor: {fileID: 509521041}
   entryDoor: {fileID: 345430659}
   roomLoader: {fileID: 1975565566}
-  doorDelay: 0
+  doorDelay: 1
   leverDelay: 0
 --- !u!23 &649715243
 MeshRenderer:
@@ -2326,7 +2326,7 @@ MonoBehaviour:
   exitDoor: {fileID: 315380062}
   entryDoor: {fileID: 1999901214}
   roomLoader: {fileID: 1975565566}
-  doorDelay: 0
+  doorDelay: 1
   leverDelay: 0
 --- !u!23 &863085034
 MeshRenderer:
@@ -4595,12 +4595,15 @@ MonoBehaviour:
   currentCorridorP1: {fileID: 1716670125}
   currentCorridorP2: {fileID: 1913261785}
   clearedRoom: 0
+  nextRoomNumber: 0
   doorsP1:
   - {fileID: 1999901214}
   - {fileID: 315380062}
   doorsP2:
   - {fileID: 345430659}
   - {fileID: 509521041}
+  roomP1: {fileID: 0}
+  roomP2: {fileID: 0}
 --- !u!4 &1975565567
 Transform:
   m_ObjectHideFlags: 0

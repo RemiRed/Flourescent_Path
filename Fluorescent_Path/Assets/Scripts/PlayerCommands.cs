@@ -28,11 +28,11 @@ public class PlayerCommands : NetworkBehaviour
     {
         if (roomLoader.nextRoomNumber < roomLoader.numberOfRooms)
         {
-            roomLoader.RpcLoadNextRoom(roomLoader.roomP1, roomLoader.roomP2);
+            roomLoader.LoadNextRoom();
         }
         else
         {
-            roomLoader.RpcLoadFinalRoom();
+            roomLoader.LoadFinalRoom();
         }
     }
 }
