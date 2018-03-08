@@ -693,3 +693,4 @@ MonoBehaviour:
   compatibleRooms: []
   entryDoor: {fileID: 0}
   exitDoor: {fileID: 0}
+  pairedRoom: {fileID: 0}

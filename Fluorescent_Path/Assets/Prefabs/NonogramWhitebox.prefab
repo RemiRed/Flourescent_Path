@@ -128,6 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4560883901891200}
   - component: {fileID: 114238905026644210}
+  - component: {fileID: 114488582746016372}
   m_Layer: 0
   m_Name: NonogramWhitebox
   m_TagString: Untagged
@@ -2682,6 +2683,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomLoader: {fileID: 0}
   exitDoor: {fileID: 0}
+--- !u!114 &114488582746016372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1201029179849406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 6
+    i1: 119
+    i2: 227
+    i3: 161
+    i4: 206
+    i5: 222
+    i6: 188
+    i7: 116
+    i8: 250
+    i9: 18
+    i10: 218
+    i11: 160
+    i12: 144
+    i13: 99
+    i14: 105
+    i15: 179
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114696816670218840
 MonoBehaviour:
   m_ObjectHideFlags: 1
