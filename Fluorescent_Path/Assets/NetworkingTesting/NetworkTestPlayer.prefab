@@ -94,9 +94,9 @@ GameObject:
   - component: {fileID: 23945255317958018}
   - component: {fileID: 114087305687234668}
   - component: {fileID: 54558727482679602}
+  - component: {fileID: 114428985751146670}
   - component: {fileID: 114009491018639088}
   - component: {fileID: 114852251941882480}
-  - component: {fileID: 114428985751146670}
   m_Layer: 0
   m_Name: NetworkTestPlayer
   m_TagString: Player
@@ -204,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1377563522295830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.9138656, y: 2.1954134, z: 7.9256716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4325101140774688}
@@ -222,7 +222,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1761807490298144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 1.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4700132726719606}

@@ -32,7 +32,6 @@ public class ButtonTest : Interractable
     {
         exitDoor.SetActive(true);
         roomLoader.UnloadCorridor();
-
     }
 
     IEnumerator OpenDoor()
