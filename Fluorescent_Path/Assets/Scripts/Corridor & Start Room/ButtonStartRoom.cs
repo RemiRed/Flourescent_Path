@@ -24,16 +24,6 @@ public class ButtonStartRoom : Interractable
             return;
         }
         activated = true;
-        StartCoroutine(OpenDoor());
+        roomLoader.OpenRoomDoors();
     }
-
-    
-
-    IEnumerator OpenDoor()
-    {
-        yield return new WaitForSeconds(doorDelay);
-        startRoomDoor.SetActive(false);
-        yield return null;
-    }
-
 }

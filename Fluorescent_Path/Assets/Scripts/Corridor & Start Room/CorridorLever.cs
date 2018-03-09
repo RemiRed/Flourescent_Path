@@ -17,7 +17,7 @@ public class CorridorLever : Interractable
     [SerializeField]
     float leverDelay;
 
-    bool pulled = false, opening = false;
+    bool pulled = false;
 
     void Pull()
     {
@@ -25,26 +25,13 @@ public class CorridorLever : Interractable
         {
             pulled = true;
             playerCmd.CmdCorridorLever();
-            
-        }
-        if (roomLoader.clearedRoom && !opening)
-        {
-            opening = true;
-            StartCoroutine(OpenDoor());
         }
     }
 
     void Release()
     {
-
-    }
-
-    IEnumerator OpenDoor()
-    {
-        yield return new WaitForSeconds(doorDelay);
-        exitDoor.SetActive(false);
-        entryDoor.SetActive(true);
-        yield return null;
+        playerCmd.CmdCorridorLeverRelease();
+        pulled = false;
     }
 
 }

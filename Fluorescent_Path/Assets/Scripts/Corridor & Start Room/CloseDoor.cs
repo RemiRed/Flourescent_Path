@@ -12,7 +12,7 @@ public class CloseDoor : MonoBehaviour
     {
         roomLoader = GameObject.FindGameObjectWithTag("RoomLoader").GetComponent<RoomLoader>();
         room = transform.parent.GetComponent<RoomVariables>();
-        roomLoader.SetEntrydoor();
+        roomLoader.SetEntryDoors();
     }
 
     private void OnTriggerEnter(Collider c)

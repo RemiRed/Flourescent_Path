@@ -24,15 +24,23 @@ public class PlayerCommands : NetworkBehaviour
     }
 
     [Command]
+    public void CmdCorridorLeverRelease()
+    {
+        roomLoader.clearedRoom = false;
+    }
+
+    [Command]
     public void CmdLoad() //Loads the next room, or last room if the last room is the next room
     {
         if (roomLoader.nextRoomNumber < roomLoader.numberOfRooms)
         {
             roomLoader.LoadNextRoom();
+            roomLoader.OpenCorridorDoors();
         }
         else
         {
             roomLoader.LoadFinalRoom();
+            roomLoader.OpenCorridorDoors();
         }
     }
 }

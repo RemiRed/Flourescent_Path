@@ -59,12 +59,27 @@ public class RoomLoader : NetworkBehaviour
         }
     }
 
-    public void SetEntrydoor()
+    public void SetEntryDoors()
     {
         currentRoomP1.GetComponent<RoomVariables>().entryDoor = doorsP1[1];
         currentRoomP2.GetComponent<RoomVariables>().entryDoor = doorsP2[1];
     }
 
+    public void OpenRoomDoors()
+    {
+        doorsP1[0].SetActive(false);
+        doorsP1[1].SetActive(true);
+        doorsP2[0].SetActive(false);
+        doorsP2[1].SetActive(true);
+    }
+
+    public void OpenCorridorDoors()
+    {
+        doorsP1[0].SetActive(true);
+        doorsP1[1].SetActive(false);
+        doorsP2[0].SetActive(true);
+        doorsP2[1].SetActive(false);
+    }
 
     public void UnloadCorridor() //Unloads the previous corridor. Call this after entering the next room
     {
