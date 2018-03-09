@@ -2259,8 +2259,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944359287653886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -9}
-  m_LocalScale: {x: 6.22, y: 3, z: 2}
+  m_LocalPosition: {x: 0, y: 2.5, z: -8}
+  m_LocalScale: {x: 13, y: 5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 4083444398624572}
   m_RootOrder: 1
@@ -5743,8 +5743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48944a5501bd60b4a9ae7f68efc8406c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  roomLoader: {fileID: 0}
 --- !u!114 &114904362412608666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5756,6 +5754,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845a179c49f97f0468df1acb01ad4756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SyncVarDirtyBits: 0
+  m_LastSendTime: 0
+  m_SyncVarGuard: 0
+  m_MyView: {fileID: 0}
   interractMethodName: 
   stopInterractMethodName: 
   delay: 0.5
@@ -5764,3 +5766,4 @@ MonoBehaviour:
   entryDoor: {fileID: 0}
   roomLoader: {fileID: 0}
   doorDelay: 0
+  activated: 0

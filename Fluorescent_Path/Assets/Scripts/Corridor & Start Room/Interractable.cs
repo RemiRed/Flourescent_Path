@@ -19,10 +19,8 @@ public class Interractable : NetworkBehaviour
 
     public void StopInterract()
     {
-        print("innan");
         if (stopInterractMethodName != null && stopInterractMethodName != "")
         {
-            print(true);
             Invoke(stopInterractMethodName, delay);
         }
     }

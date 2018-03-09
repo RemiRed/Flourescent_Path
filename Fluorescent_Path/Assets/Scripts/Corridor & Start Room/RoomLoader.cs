@@ -59,6 +59,11 @@ public class RoomLoader : NetworkBehaviour
         }
     }
 
+    public void SetEntrydoor()
+    {
+        currentRoomP1.GetComponent<RoomVariables>().entryDoor = doorsP1[1];
+        currentRoomP2.GetComponent<RoomVariables>().entryDoor = doorsP2[1];
+    }
 
 
     public void UnloadCorridor() //Unloads the previous corridor. Call this after entering the next room
@@ -83,6 +88,7 @@ public class RoomLoader : NetworkBehaviour
         doorsP1.RemoveAt(0);
         NetworkServer.Destroy(doorsP2[0]);
         doorsP2.RemoveAt(0);
+
 
     }
     
@@ -121,7 +127,7 @@ public class RoomLoader : NetworkBehaviour
 
         NetworkServer.Spawn(currentRoomP1);
         NetworkServer.Spawn(currentRoomP2);
-
+                
         doorsP1.Add(Instantiate(doorPrefab, currentCorridorP1.transform.position + new Vector3(0, 1.25f, (roomsP1[nextRoomNumber].GetComponent<RoomVariables>().length * 2 + currentCorridorP1.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
         doorsP2.Add(Instantiate(doorPrefab, currentCorridorP2.transform.position + new Vector3(0, 1.25f, (roomsP2[nextRoomNumber].GetComponent<RoomVariables>().length * 2 + currentCorridorP2.GetComponent<RoomVariables>().length) / 2f), new Quaternion()));
 
