@@ -35,7 +35,7 @@ public class Interract : MonoBehaviour
     {
         if (Input.GetAxisRaw("Interract") == 1) //Checks if the key has been pressed and picks up, interracts, or drops an object
         {
-            if (!keyUp)
+            if (keyUp)
             {
                 keyUp = false;
                 if (carrying)
