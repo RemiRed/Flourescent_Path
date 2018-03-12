@@ -911,6 +911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4083444398624572}
   - component: {fileID: 114311373476312368}
+  - component: {fileID: 114240883167700460}
   m_Layer: 0
   m_Name: KTANEMazeWhitebox
   m_TagString: Untagged
@@ -2258,8 +2259,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944359287653886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -9}
-  m_LocalScale: {x: 6.22, y: 3, z: 2}
+  m_LocalPosition: {x: 0, y: 2.5, z: -8}
+  m_LocalScale: {x: 13, y: 5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 4083444398624572}
   m_RootOrder: 1
@@ -5682,6 +5683,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114240883167700460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641460689761824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 159
+    i1: 14
+    i2: 232
+    i3: 170
+    i4: 121
+    i5: 90
+    i6: 195
+    i7: 84
+    i8: 217
+    i9: 96
+    i10: 225
+    i11: 227
+    i12: 13
+    i13: 64
+    i14: 151
+    i15: 17
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114311373476312368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5710,8 +5743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48944a5501bd60b4a9ae7f68efc8406c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  roomLoader: {fileID: 0}
 --- !u!114 &114904362412608666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5723,10 +5754,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845a179c49f97f0468df1acb01ad4756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SyncVarDirtyBits: 0
+  m_LastSendTime: 0
+  m_SyncVarGuard: 0
+  m_MyView: {fileID: 0}
   interractMethodName: 
   stopInterractMethodName: 
   delay: 0.5
+  playerCmd: {fileID: 0}
   exitDoor: {fileID: 0}
   entryDoor: {fileID: 0}
   roomLoader: {fileID: 0}
   doorDelay: 0
+  activated: 0
