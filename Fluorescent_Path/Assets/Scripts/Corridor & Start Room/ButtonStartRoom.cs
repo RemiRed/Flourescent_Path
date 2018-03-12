@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class ButtonStartRoom : Interractable
 {
@@ -14,6 +15,8 @@ public class ButtonStartRoom : Interractable
     float doorDelay;
 
     bool activated = false;
+    
+
     void Press()
     {
         if (activated)
@@ -21,14 +24,6 @@ public class ButtonStartRoom : Interractable
             return;
         }
         activated = true;
-        StartCoroutine(OpenDoor());
+        roomLoader.OpenRoomDoors();
     }
-
-    IEnumerator OpenDoor()
-    {
-        yield return new WaitForSeconds(doorDelay);
-        startRoomDoor.SetActive(false);
-        yield return null;
-    }
-
 }

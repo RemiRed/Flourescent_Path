@@ -35,7 +35,7 @@ public class Interract : MonoBehaviour
     {
         if (Input.GetAxisRaw("Interract") == 1) //Checks if the key has been pressed and picks up, interracts, or drops an object
         {
-            if (!keyUp)
+            if (keyUp)
             {
                 keyUp = false;
                 if (carrying)
@@ -64,7 +64,7 @@ public class Interract : MonoBehaviour
 
         if (lastInterractedObject != null && oldInterraction)
         {
-
+            lastInterractedObject.GetComponent<Interractable>().StopInterract();
         }
     }
 
@@ -108,6 +108,7 @@ public class Interract : MonoBehaviour
             if (hit.transform.tag == "Interractable") //If the object is interractable, like a button, it'll interract with the object
             {
                 lastInterractedObject = hit.transform.gameObject;
+                lastInterractedObject.GetComponent<Interractable>().playerCmd = transform.parent.gameObject.GetComponent<PlayerCommands>();
                 lastInterractedObject.GetComponent<Interractable>().Interract();
                 return true;
             }

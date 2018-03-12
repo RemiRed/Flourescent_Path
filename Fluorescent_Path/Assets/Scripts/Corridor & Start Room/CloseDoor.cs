@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class CloseDoor : MonoBehaviour
 {
-
-    public GameObject player;
+    
     RoomVariables room;
-    [SerializeField]
     RoomLoader roomLoader;
 
     private void Start()
     {
+        roomLoader = GameObject.FindGameObjectWithTag("RoomLoader").GetComponent<RoomLoader>();
         room = transform.parent.GetComponent<RoomVariables>();
+        roomLoader.SetEntryDoors();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider c)
     {
-        if (player.GetComponent<Collider>() == other)
+        if (c.tag == "Player")
         {
             Unload();
         }
@@ -25,8 +25,8 @@ public class CloseDoor : MonoBehaviour
 
     void Unload()
     {
-        room.entryDoor.SetActive(true);
         roomLoader.UnloadCorridor();
+        room.entryDoor.SetActive(true);
         Destroy(gameObject);
     }
 }
