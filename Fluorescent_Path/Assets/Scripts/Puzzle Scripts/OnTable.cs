@@ -12,6 +12,10 @@ public class OnTable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.tag != "Movable")
+        {
+            return;
+        }
         if (!placedItems.Contains(other.gameObject))
         {
             placedItems.Add(other.gameObject);
@@ -33,6 +37,10 @@ public class OnTable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.tag != "Movable")
+        {
+            return;
+        }
         if (placedItems.Contains(other.gameObject))
         {
             placedItems.Remove(other.gameObject);

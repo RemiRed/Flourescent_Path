@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65754799291831936}
   - component: {fileID: 23965746976891102}
   - component: {fileID: 54260524223947240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square 1
   m_TagString: Movable
   m_Icon: {fileID: 0}

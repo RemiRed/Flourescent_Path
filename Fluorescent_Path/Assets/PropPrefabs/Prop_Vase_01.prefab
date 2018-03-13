@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33850692711361050}
   - component: {fileID: 23498173543517076}
   - component: {fileID: 54957318198992624}
-  m_Layer: 0
+  - component: {fileID: 65705032979972624}
+  m_Layer: 8
   m_Name: Prop_Vase_01
-  m_TagString: Untagged
+  m_TagString: Movable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,3 +99,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65705032979972624
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168804004842402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36947295, y: 0.74826825, z: 0.45609465}
+  m_Center: {x: 0, y: 0, z: 0}
