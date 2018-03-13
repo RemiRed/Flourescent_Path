@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PortalTeleporterScript : MonoBehaviour {
-
-    [SerializeField]
+    
     Transform player;
     [SerializeField]
     Transform reciver;
@@ -22,7 +21,7 @@ public class PortalTeleporterScript : MonoBehaviour {
             {
                 // Teleportera spelaren. 
                 float rotationDiff = -Quaternion.Angle(transform.rotation, reciver.rotation);
-                rotationDiff += 40;
+               // rotationDiff += 40;
                 player.Rotate(Vector3.up, rotationDiff);
 
                 Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
@@ -42,6 +41,7 @@ public class PortalTeleporterScript : MonoBehaviour {
         if (other.tag == "Player")
         {
             playerIsOverLapping = true;
+            player = other.transform;
         }
     }
 
@@ -50,6 +50,7 @@ public class PortalTeleporterScript : MonoBehaviour {
         if (other.tag == "Player")
         {
             playerIsOverLapping = false;
+            player = other.transform;
         }
     }
 }
