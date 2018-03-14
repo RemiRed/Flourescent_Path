@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: a3f907537bcec9e4ca7a9b8fbc2853a4
-timeCreated: 1520432588
+guid: 35047407235235847a4f8375dcba1490
+timeCreated: 1520969716
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: Prop_CeilingLampBulb_01_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCylinder7
+    4300000: Prop_CeilingLampBulb_01
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -85,7 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
