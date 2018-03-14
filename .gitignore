@@ -45,3 +45,6 @@ sysinfo.txt
 Fluorescent_Path/Assets/Scenes/Oskar scene.unity
 *.ide-shm
 *.ide-wal
+*.ide
+*.ide
+*.ide-wal
