@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: e4328e9d895e986419712ff6c004dfe8
-timeCreated: 1521067538
+guid: eec814fe49f2c594685f79bb96fa2e11
+timeCreated: 1521108495
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Prop_Wallext_8x9_Window_02
-    2100002: Prop_Wallext_8x9_Window_Metal_Mat
-    2100004: Prop_Wallext_8x9_WindowBoard_Mat
+    2100000: Prop_Wallext_9x9_01_WindowFrame_Mat
+    2100002: Prop_Wallext_9x9_01_Window_Mat
+    2100004: Prop_Wallext_8x9_Window_02
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Prop_Wallext_8x9_Window_01
+    4300000: Prop_Wallext_8x9_9Windows_01
     9500000: //RootNode
   externalObjects: {}
   materials:
