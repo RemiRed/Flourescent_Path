@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: c0734226ad7ff1e4baf6f498da1e0a99
-timeCreated: 1521067538
+guid: 598d918599eca4742a96993d33c8b35b
+timeCreated: 1521118274
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Prop_Wallext_8x9_01_Mat
+    2100000: lambert5
+    2100002: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Prop_Wallext_8x9_01
-    9500000: //RootNode
+    4300000: Prop_WallIntCorner1_25x2_5_03
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -42,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
