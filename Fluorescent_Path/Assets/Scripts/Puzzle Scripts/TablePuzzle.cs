@@ -18,6 +18,14 @@ public class TablePuzzle : RoomVariables
     [SerializeField]
     List<OnTable> onTables = new List<OnTable>();
 
+    [SerializeField]
+    List<Sprite> symbols = new List<Sprite>();
+
+    [SerializeField]
+    List<GameObject> symbolClues = new List<GameObject>();
+
+
+
     void Start()
     {
         for (int i = 0; i < totalItems; i++)
