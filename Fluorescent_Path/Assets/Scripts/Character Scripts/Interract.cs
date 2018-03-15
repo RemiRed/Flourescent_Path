@@ -78,7 +78,7 @@ public class Interract : MonoBehaviour
 
         Ray ray = GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, carryDistance)) //Finds an object that's within carry distance 
+        if (Physics.Raycast(ray, out hit, carryDistance,8)) //Finds an object that's within carry distance 
         {
             if (hit.transform.tag == "Movable") //If the object is movable it starts moving the object around
             {
