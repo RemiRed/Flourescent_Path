@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4376818774566792}
   - component: {fileID: 33375312317911844}
   - component: {fileID: 23032064814881996}
+  - component: {fileID: 95446253736416402}
   m_Layer: 0
   m_Name: Prop_WallInt1.25x2.5_01
   m_TagString: Untagged
@@ -35,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1460800809570150}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 40.072258, y: -0.035, z: 1.5747867}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: a34b1a7b25711f14d92c20d1825b0ad2, type: 2}
-  - {fileID: 2100000, guid: d48a64a745737094281fe2eeca489e95, type: 2}
+  - {fileID: 2100000, guid: a34b1a7b25711f14d92c20d1825b0ad2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,4 +83,21 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1460800809570150}
-  m_Mesh: {fileID: 4300000, guid: d1d87f8baf317a241aff6643a175355d, type: 3}
+  m_Mesh: {fileID: 4300000, guid: e8c3d93bcd116d044a1aa48d6aa3da39, type: 3}
+--- !u!95 &95446253736416402
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460800809570150}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e8c3d93bcd116d044a1aa48d6aa3da39, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1

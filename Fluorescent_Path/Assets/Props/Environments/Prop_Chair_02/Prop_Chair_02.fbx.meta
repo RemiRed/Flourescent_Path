@@ -1,20 +1,21 @@
 fileFormatVersion: 2
-guid: 9b5f41a62759b20418a5aa1b94120650
-timeCreated: 1520432602
+guid: 3c127498232ed814aae2de7e2bc89d55
+timeCreated: 1520971604
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: lambert2
     2100002: Prop_Chair_01_Legs
     2100004: Prop_Chair_01_Spine
     2100006: Prop_Chair_01_Mat
     2100008: Prop_Chair_01_Head
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube6
+    4300000: Prop_Chair_02
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -89,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
