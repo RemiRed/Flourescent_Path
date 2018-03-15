@@ -1,17 +1,18 @@
 fileFormatVersion: 2
-guid: e924230f518b69449b093d4b3cfb465a
-timeCreated: 1520255006
+guid: 0b792b93c19f4a04780ec0855d589ba8
+timeCreated: 1520971882
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert5
-    2100002: lambert1
+    2100000: Prop_WallInt3x3_Edges_Mat
+    2100002: Prop_WallInt3x3_Mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Prop_WallInt3x3_03
+    4300000: Prop_WallInt3x3
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -86,7 +87,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
