@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4436386155229248}
   - component: {fileID: 33388337731103706}
   - component: {fileID: 23916763889557770}
+  - component: {fileID: 65887190216244398}
   m_Layer: 0
   m_Name: GameProp_PressurePlate_02
   m_TagString: Untagged
@@ -35,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1578540149411006}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.097837, y: 270.97818, z: 98.24176}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,3 +83,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1578540149411006}
   m_Mesh: {fileID: 4300000, guid: 9cb1b78333aab47cd9d0c629cd93050c, type: 3}
+--- !u!65 &65887190216244398
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1578540149411006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 99.89688, y: 9.989688, z: 99.89688}
+  m_Center: {x: 0, y: 0, z: 0}
