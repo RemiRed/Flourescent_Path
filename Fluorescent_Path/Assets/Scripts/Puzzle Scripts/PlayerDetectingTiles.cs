@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class PlayerDetectingTiles : MonoBehaviour {
-
-    public GameObject player;
-    public int whatTile;
+public class PlayerDetectingTiles : NetworkBehaviour {
+    [SerializeField]
+    GameObject room;
+    GameObject player;
+    [SerializeField]
+    int whatTile;
 
 	// Use this for initialization
 	void Start () {
@@ -16,15 +19,37 @@ public class PlayerDetectingTiles : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    void OnTriggerEnter(Collider coolDude)
+    [Command]
+    public void CmdTriggerEnter()
     {
-        player = coolDude.gameObject;
+        room.GetComponent<MirrorRoom>().sameTile = whatTile;
     }
 
-    void OnTriggerExit(Collider coolDude)
+    [Command]
+    public void CmdTriggerExit()
     {
         player = null;
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        player = other.gameObject;
+        CmdTriggerEnter();
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        CmdTriggerExit();
+    }
+
+    /*void OnTriggerEnter(Collider coolDude)
+    {
+        player = coolDude.gameObject;
+        room.GetComponent<MirrorRoom>().sameTile = whatTile;
+    }
+    
+    void OnTriggerExit(Collider coolDude)
+    {
+        player = null;
+    }*/
 }

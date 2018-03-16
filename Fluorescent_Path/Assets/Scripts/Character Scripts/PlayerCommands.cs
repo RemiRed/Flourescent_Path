@@ -10,7 +10,7 @@ public class PlayerCommands : NetworkBehaviour
 
     private void Start()
     {
-        roomLoader = GameObject.FindGameObjectWithTag("RoomLoader").GetComponent<RoomLoader>();
+        //roomLoader = GameObject.FindGameObjectWithTag("RoomLoader").GetComponent<RoomLoader>();
     }
 
     [Command]

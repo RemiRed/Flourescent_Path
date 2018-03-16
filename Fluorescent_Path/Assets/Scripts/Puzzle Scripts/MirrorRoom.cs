@@ -5,8 +5,8 @@ using UnityEngine.Networking;
 
 public class MirrorRoom : RoomVariables {
 
-    [SerializeField]
-    List<GameObject> tiles = new List<GameObject>();
+    [SyncVar(hook = "Test")]
+    public int sameTile;
 
 	// Use this for initialization
 	void Start () {     
@@ -15,18 +15,24 @@ public class MirrorRoom : RoomVariables {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        CheckIfSameTile();
 	}
-
-    void FindPLayers()
+    
+    void CheckIfSameTile()
     {
-        foreach (GameObject playa in tiles)
+        if(pairedRoom.GetComponent<MirrorRoom>().sameTile == sameTile)
         {
-            if(playa.GetComponent<PlayerDetectingTiles>().player != null)
-            {
-
-            }
-
+            Debug.Log("is nice");
+        }
+        else
+        {
+            Debug.Log("is not nice");
         }
     }
+
+    void Test(int tile)
+    {
+        print(tile);
+    }
+
 }
