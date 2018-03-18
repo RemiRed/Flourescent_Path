@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 142a8522e98deee4ea8c50dec131405e
-timeCreated: 1521061743
+guid: 6be46f22684ef56429c8aa7688b4313b
+timeCreated: 1521335872
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Prop_Fountain_01_Mat
+    2100000: Prop_Fountain_01_Base_Mat
+    2100002: Prop_Fountain_01_Middle_Mat
+    2100004: Prop_Fountain_01_Base_Top_Mat
     2300000: //RootNode
     3300000: //RootNode
     4300000: Prop_Fountain_01
