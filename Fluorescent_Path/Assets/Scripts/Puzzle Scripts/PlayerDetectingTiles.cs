@@ -12,6 +12,7 @@ public class PlayerDetectingTiles : NetworkBehaviour
     int row, col;
     [SerializeField]
     List<GameObject> walls = new List<GameObject>();
+    
 
     void OnTriggerEnter(Collider playerCollider)
     {
