@@ -12,7 +12,7 @@ public class MirrorRoom : RoomVariables
     [SerializeField]
     List<MirrorPuzzleWalls> walls = new List<MirrorPuzzleWalls>();
 
-    int col = 3, row = 0;
+    int col = 3, row = 1;
 
     void Start()
     {
