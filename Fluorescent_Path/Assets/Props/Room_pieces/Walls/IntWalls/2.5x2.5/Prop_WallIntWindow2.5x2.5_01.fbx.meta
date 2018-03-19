@@ -1,46 +1,16 @@
 fileFormatVersion: 2
-guid: 13e568353f46b17448bd1467864dbd4d
-timeCreated: 1521118699
+guid: a37a82fda11ba2948a87094d79abe604
+timeCreated: 1521462570
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: polySurface25
-    100002: polySurface26
-    100004: polySurface26 1
-    100006: polySurface27
-    100008: polySurface28
-    100010: polySurface39
-    100012: polySurface40
-    100014: polySurface41
-    100016: //RootNode
-    100018: transform11
-    100020: transform12
-    100022: transform13
-    100024: transform3
-    100026: transform5
-    100028: transform6
-    100030: transform7
-    400000: polySurface25
-    400002: polySurface26
-    400004: polySurface26 1
-    400006: polySurface27
-    400008: polySurface28
-    400010: polySurface39
-    400012: polySurface40
-    400014: polySurface41
-    400016: //RootNode
-    400018: transform11
-    400020: transform12
-    400022: transform13
-    400024: transform3
-    400026: transform5
-    400028: transform6
-    400030: transform7
+    100000: //RootNode
+    400000: //RootNode
     2100000: lambert5
     2100002: lambert1
-    2300000: polySurface41
-    3300000: polySurface41
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: polySurface41
   externalObjects: {}
   materials:
@@ -76,7 +46,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 0
+    importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
@@ -97,7 +67,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
