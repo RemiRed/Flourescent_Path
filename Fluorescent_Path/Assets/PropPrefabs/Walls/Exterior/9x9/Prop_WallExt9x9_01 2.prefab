@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33991020542970796}
   - component: {fileID: 23934853799442742}
   m_Layer: 0
-  m_Name: Prop_WallExt9x9largeWindow_01
+  m_Name: Prop_WallExt9x9_01 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
