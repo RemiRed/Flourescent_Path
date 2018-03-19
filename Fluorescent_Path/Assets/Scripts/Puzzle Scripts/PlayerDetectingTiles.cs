@@ -10,36 +10,18 @@ public class PlayerDetectingTiles : NetworkBehaviour
     GameObject player;
     [SerializeField]
     int row, col;
+
     [SerializeField]
+    GameObject wall;
     List<GameObject> walls = new List<GameObject>();
 
     private void Start()
     {
-        foreach (GameObject wall in GameObject.FindGameObjectsWithTag("MirrorRoomWall"))
-        {
-            if (wall.transform.position.x + 2.75 == transform.position.x && wall.transform.position.z == transform.position.z)
-            {
-                walls.Add(wall);
-            }
-            else if (wall.transform.position.x - 2.75 == transform.position.x && wall.transform.position.z == transform.position.z)
-            {
-                walls.Add(wall);
-            }
-            else if (wall.transform.position.x == transform.position.x && wall.transform.position.z + 2.75 == transform.position.z)
-            {
-                walls.Add(wall);
-            }
-            else if (wall.transform.position.x == transform.position.x && wall.transform.position.z - 2.75 == transform.position.z)
-            {
-                walls.Add(wall);
-            }
-
-            if (walls.Count >= 4)
-            {
-                continue;
-            }
-        }
-        CreatePath();
+        Quaternion rotate = new Quaternion();
+        rotate.eulerAngles = new Vector3(0, 90, 0);
+        walls.Add(Instantiate(wall, transform.position + new Vector3(-2.75f, 1.9f, 0), rotate));
+        walls.Add(Instantiate(wall, transform.position + new Vector3(0, 1.9f, -2.75f), new Quaternion()));
+        //CreatePath();
     }
 
     void OnTriggerEnter(Collider playerCollider)
