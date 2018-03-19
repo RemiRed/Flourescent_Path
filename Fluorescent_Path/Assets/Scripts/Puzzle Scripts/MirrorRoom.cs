@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 public class MirrorRoom : RoomVariables
 {
 
-    [SyncVar(hook = "Test")]
+    [SyncVar]
     public int playerCol, playerRow;
 
     [SerializeField]
@@ -62,5 +62,7 @@ public class MirrorRoom : RoomVariables
             Debug.Log("is not nice");
         }
     }
+
+
 
 }

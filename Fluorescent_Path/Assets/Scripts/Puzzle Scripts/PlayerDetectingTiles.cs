@@ -10,10 +10,12 @@ public class PlayerDetectingTiles : NetworkBehaviour
     GameObject player;
     [SerializeField]
     int row, col;
+    [SerializeField]
+    List<GameObject> walls = new List<GameObject>();
 
-    void OnTriggerEnter(Collider coolDude)
+    void OnTriggerEnter(Collider playerCollider)
     {
-        player = coolDude.gameObject;
+        player = playerCollider.gameObject;
         player.GetComponent<PlayerCommands>().CmdUppdatePosition();
         room.GetComponent<MirrorRoom>().playerCol = col;
         room.GetComponent<MirrorRoom>().playerRow = row;
@@ -22,5 +24,15 @@ public class PlayerDetectingTiles : NetworkBehaviour
     void OnTriggerExit(Collider coolDude)
     {
         player = null;
+    }
+
+    public void CreatePath()
+    {
+
+    }
+
+    bool PossiblePath()
+    {
+        return true;
     }
 }

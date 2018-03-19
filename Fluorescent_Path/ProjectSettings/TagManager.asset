@@ -7,7 +7,6 @@ TagManager:
   - Movable
   - Interractable
   - RoomLoader
-  - MirrorRoomWall
   layers:
   - Default
   - TransparentFX
