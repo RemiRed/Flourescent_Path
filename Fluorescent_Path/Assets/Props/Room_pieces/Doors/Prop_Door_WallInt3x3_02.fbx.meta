@@ -1,21 +1,34 @@
 fileFormatVersion: 2
-guid: 268c63e6796ee74499c3a57eb5d06cc6
-timeCreated: 1521545308
+guid: 3dd3977ec32d83440a4eb150196834ad
+timeCreated: 1521552739
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: GameProp_Lever_01_Mat
-    2100002: GameProp_Lever_Base_01_Mat
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: GameProp_Lever_01
-    9500000: //RootNode
+    100000: Door_Frame
+    100002: polySurface43
+    100004: polySurface44
+    100006: //RootNode
+    400000: Door_Frame
+    400002: polySurface43
+    400004: polySurface44
+    400006: //RootNode
+    2100000: lambert3
+    2100002: lambert_Door_Wallint3x4
+    2100004: lambert1
+    2100006: Default_Material
+    2300000: Door_Frame
+    2300002: polySurface43
+    2300004: polySurface44
+    3300000: Door_Frame
+    3300002: polySurface43
+    3300004: polySurface44
+    4300000: Door_Frame
+    4300002: polySurface43
+    4300004: polySurface44
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -87,7 +100,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
