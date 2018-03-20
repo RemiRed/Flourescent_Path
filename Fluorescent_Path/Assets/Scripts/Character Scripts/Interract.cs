@@ -78,8 +78,10 @@ public class Interract : MonoBehaviour
 
         Ray ray = GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
         RaycastHit hit;
+
         if (Physics.Raycast(ray, out hit, carryDistance,8)) //Finds an object that's within carry distance 
         {
+
             if (hit.transform.tag == "Movable") //If the object is movable it starts moving the object around
             {
                 carrying = true;
@@ -92,7 +94,6 @@ public class Interract : MonoBehaviour
                 oldRot = carriedObject.transform.localRotation;
                 transform.parent.GetComponent<Rigidbody>().drag += carriedObject.GetComponent<Rigidbody>().mass;
             }
-
         }
     }
 
@@ -125,6 +126,5 @@ public class Interract : MonoBehaviour
         transform.parent.GetComponent<Rigidbody>().drag = defaultDrag;
         carriedObject.GetComponent<Rigidbody>().AddForce((carriedObject.transform.position - oldPos) / (Time.deltaTime * slow));
         carriedObject = null;
-
     }
 }

@@ -7,14 +7,10 @@ public class MirrorRoom : RoomVariables {
 
     [SyncVar(hook = "Test")]
     public int sameTile;
-
-	// Use this for initialization
-	void Start () {     
-        
-	}
 	
 	// Update is called once per frame
 	void Update () {
+		
         CheckIfSameTile();
 	}
     
