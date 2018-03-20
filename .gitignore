@@ -51,3 +51,5 @@ sysinfo.txt
 *.ide
 *.ide-shm
 *.ide-wal
+Fluorescent_Path/.vs/Fluorescent_Path/v15/Server/sqlite3/storage.ide-shm
+*.ide-shm
