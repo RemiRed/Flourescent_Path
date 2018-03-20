@@ -83,6 +83,7 @@ public class PlayerDetectingTiles : NetworkBehaviour
                 }
             }
         }
+
     }
 
     void OnTriggerEnter(Collider playerCollider)
@@ -100,11 +101,19 @@ public class PlayerDetectingTiles : NetworkBehaviour
 
     public void RemoveWall(int wallID)
     {
+        print("REMOVED at " + row + " " + col);
         walls[wallID].SetActive(false);
     }
 
-    bool PossiblePath()
+   public bool CheckRowCol(int row, int col)
     {
-        return true;
+        if (row == this.row && col == this.col)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

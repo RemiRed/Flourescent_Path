@@ -8,18 +8,37 @@ public class MirrorRoom : RoomVariables
 
     [SyncVar]
     public int playerCol, playerRow;
-    
-    [SerializeField]
-    List<PlayerDetectingTiles> tiles = new List<PlayerDetectingTiles>();
+
 
     int col = 3, row = 1;
+    bool pathCheck = false;
 
-    void Start()
+    public void CreatePath() //kALLA PÅ SKRIPTETE
     {
-        foreach (GameObject tile in GameObject.FindGameObjectsWithTag("MirrorRoomTile"))
+        if (pathCheck)
         {
+            return;
+        }
+        else
+        {
+            pathCheck = true;
+        }
+        while (row <= 17)
+        {
+            //Open random door in col/row
+            foreach (GameObject tile in GameObject.FindGameObjectsWithTag("MirrorRoomTile"))
+            {
+                if (tile.GetComponent<PlayerDetectingTiles>().CheckRowCol(row, col))
+                {
+                    int doorID = 0; //slumpa
+                    tile.GetComponent<PlayerDetectingTiles>().RemoveWall(doorID);
+                    continue;
+                }
+            }
+            //Only allow back if there's a path that's possible to go forward later
 
         }
+        //open doors to exit
     }
 
     void Update()
