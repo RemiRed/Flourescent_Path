@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Oskar scene.unity
     guid: 68b08d998b5140947bf910c071f57860
+  - enabled: 1
+    path: Assets/Scenes/WB_Color-Symbol.unity
+    guid: 16448da5ec4e1bb46a010a249e175110
