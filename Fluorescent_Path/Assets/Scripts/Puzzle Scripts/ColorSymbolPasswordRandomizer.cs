@@ -7,9 +7,10 @@ public class ColorSymbolPasswordRandomizer : NetworkBehaviour {
 
 	public Password passwordManager;
 
-	public List<Transform> symbolLocations;
 	public List<Color> symbolColors;
+	public List<GameObject> symbols;
 
+//	public List<Transform> symbolLocations;
 
 
 	// Use this for initialization
