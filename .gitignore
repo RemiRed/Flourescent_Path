@@ -48,3 +48,7 @@ Fluorescent_Path/Assets/Scenes/Oskar scene.unity
 *.ide
 *.ide
 *.ide-wal
+*.ide
+*.ide
+*.ide-shm
+*.ide-wal
