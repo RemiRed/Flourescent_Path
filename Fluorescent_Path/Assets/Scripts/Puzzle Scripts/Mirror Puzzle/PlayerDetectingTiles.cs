@@ -15,15 +15,15 @@ public class PlayerDetectingTiles : NetworkBehaviour
     GameObject wall;
 
     [SerializeField]
-    GameObject[] walls = new GameObject[4]();
+    GameObject[] walls = new GameObject[4];
 
 
     private void Start()
     {
-        foreach (GameObject wall in GameObject.FindGameObjectsWithTag("MirrorRoomWalls"))
+        foreach (GameObject wall in GameObject.FindGameObjectsWithTag("MirrorRoomWall"))
         {
-           
-            if (wall.transform.position.x > transform.position.x && wall.transform.position.y == transform.position.y)
+
+            if (wall.transform.position.x > transform.position.x && wall.transform.position.z == transform.position.z)
             {
                 if (walls[0] != null)
                 {
@@ -38,7 +38,7 @@ public class PlayerDetectingTiles : NetworkBehaviour
                 }
             }
 
-            if (wall.transform.position.x < transform.position.x && wall.transform.position.y == transform.position.y)
+            if (wall.transform.position.x < transform.position.x && wall.transform.position.z == transform.position.z)
             {
                 if (walls[1] != null)
                 {
@@ -53,11 +53,11 @@ public class PlayerDetectingTiles : NetworkBehaviour
                 }
             }
 
-            if (wall.transform.position.x == transform.position.x && wall.transform.position.y > transform.position.y)
+            if (wall.transform.position.x == transform.position.x && wall.transform.position.z > transform.position.z)
             {
                 if (walls[2] != null)
                 {
-                    if (wall.transform.position.y < walls[2].transform.position.y)
+                    if (wall.transform.position.z < walls[2].transform.position.z)
                     {
                         walls[2] = wall;
                     }
@@ -68,11 +68,11 @@ public class PlayerDetectingTiles : NetworkBehaviour
                 }
             }
 
-            if (wall.transform.position.x == transform.position.x && wall.transform.position.y < transform.position.y)
+            if (wall.transform.position.x == transform.position.x && wall.transform.position.z < transform.position.z)
             {
                 if (walls[3] != null)
                 {
-                    if (wall.transform.position.y > walls[3].transform.position.y)
+                    if (wall.transform.position.z > walls[3].transform.position.z)
                     {
                         walls[3] = wall;
                     }
@@ -98,13 +98,9 @@ public class PlayerDetectingTiles : NetworkBehaviour
         player = null;
     }
 
-    public void CreatePath()
+    public void RemoveWall(int wallID)
     {
-        foreach (GameObject wall in walls)
-        {
-            Destroy(wall);
-        }
-        walls.Clear();
+        walls[wallID].SetActive(false);
     }
 
     bool PossiblePath()

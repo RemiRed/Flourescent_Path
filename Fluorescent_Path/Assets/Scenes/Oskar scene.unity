@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -262,6 +262,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &3332975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -333,7 +338,7 @@ GameObject:
   - component: {fileID: 6336572}
   m_Layer: 0
   m_Name: Plane (29)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,6 +373,11 @@ MonoBehaviour:
   row: 7
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &6336573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +483,7 @@ GameObject:
   - component: {fileID: 7796738}
   m_Layer: 0
   m_Name: Plane (46)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,6 +518,11 @@ MonoBehaviour:
   row: 11
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7796739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,7 +922,7 @@ GameObject:
   - component: {fileID: 19655515}
   m_Layer: 0
   m_Name: Plane (17)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -942,6 +957,11 @@ MonoBehaviour:
   row: 3
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &19655516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,7 +1067,7 @@ GameObject:
   - component: {fileID: 21127632}
   m_Layer: 0
   m_Name: Plane (59)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1082,6 +1102,11 @@ MonoBehaviour:
   row: 15
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &21127633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1334,7 +1359,7 @@ GameObject:
   - component: {fileID: 25680181}
   m_Layer: 0
   m_Name: Plane (31)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1369,6 +1394,11 @@ MonoBehaviour:
   row: 10
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &25680182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,7 +1504,7 @@ GameObject:
   - component: {fileID: 27143014}
   m_Layer: 0
   m_Name: Plane (34)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1509,6 +1539,11 @@ MonoBehaviour:
   row: 9
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &27143015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,7 +1859,7 @@ GameObject:
   - component: {fileID: 36505241}
   m_Layer: 0
   m_Name: Plane (58)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1859,6 +1894,11 @@ MonoBehaviour:
   row: 17
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &36505242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1964,7 +2004,7 @@ GameObject:
   - component: {fileID: 37368186}
   m_Layer: 0
   m_Name: Plane (54)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1999,6 +2039,11 @@ MonoBehaviour:
   row: 13
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &37368187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2280,6 +2325,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &40196442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2478,6 +2528,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &44448342
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2682,6 +2737,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &46202524
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2963,7 +3023,7 @@ GameObject:
   - component: {fileID: 58306925}
   m_Layer: 0
   m_Name: Plane (36)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2998,6 +3058,11 @@ MonoBehaviour:
   row: 12
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &58306926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3103,7 +3168,7 @@ GameObject:
   - component: {fileID: 58495576}
   m_Layer: 0
   m_Name: Plane (12)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3138,6 +3203,11 @@ MonoBehaviour:
   row: 3
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &58495577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3395,7 +3465,7 @@ GameObject:
   - component: {fileID: 59633087}
   m_Layer: 0
   m_Name: Plane (14)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3430,6 +3500,11 @@ MonoBehaviour:
   row: 4
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &59633088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3579,6 +3654,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &66731658
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4078,6 +4158,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &73641446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4193,6 +4278,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &75421588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4221,7 +4311,7 @@ GameObject:
   - component: {fileID: 75618810}
   m_Layer: 0
   m_Name: Plane (61)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4256,6 +4346,11 @@ MonoBehaviour:
   row: 17
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &75618811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4361,7 +4456,7 @@ GameObject:
   - component: {fileID: 79410696}
   m_Layer: 0
   m_Name: Plane (33)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4396,6 +4491,11 @@ MonoBehaviour:
   row: 10
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &79410697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4501,7 +4601,7 @@ GameObject:
   - component: {fileID: 82912407}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4536,6 +4636,11 @@ MonoBehaviour:
   row: 1
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &82912408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4685,6 +4790,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &84344145
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4966,7 +5076,7 @@ GameObject:
   - component: {fileID: 88461804}
   m_Layer: 0
   m_Name: Plane (55)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5001,6 +5111,11 @@ MonoBehaviour:
   row: 17
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &88461805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5489,7 +5604,7 @@ GameObject:
   - component: {fileID: 117294865}
   m_Layer: 0
   m_Name: Plane (111)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5524,6 +5639,11 @@ MonoBehaviour:
   row: 18
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &117294866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5829,6 +5949,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &127348746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6180,6 +6305,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &140256101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6251,7 +6381,7 @@ GameObject:
   - component: {fileID: 141115701}
   m_Layer: 0
   m_Name: Plane (57)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6286,6 +6416,11 @@ MonoBehaviour:
   row: 17
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &141115702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6923,6 +7058,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &166698450
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6994,7 +7134,7 @@ GameObject:
   - component: {fileID: 168759511}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7029,6 +7169,11 @@ MonoBehaviour:
   row: 0
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &168759512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7134,7 +7279,7 @@ GameObject:
   - component: {fileID: 169349387}
   m_Layer: 0
   m_Name: Plane (29)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7169,6 +7314,11 @@ MonoBehaviour:
   row: 10
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &169349388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7552,7 +7702,7 @@ GameObject:
   - component: {fileID: 182321983}
   m_Layer: 0
   m_Name: Plane (10)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7587,6 +7737,11 @@ MonoBehaviour:
   row: 3
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &182321984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7692,7 +7847,7 @@ GameObject:
   - component: {fileID: 182605313}
   m_Layer: 0
   m_Name: Plane (27)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7727,6 +7882,11 @@ MonoBehaviour:
   row: 7
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &182605314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8648,6 +8808,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &204354938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8893,6 +9058,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &218108976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9174,7 +9344,7 @@ GameObject:
   - component: {fileID: 226255641}
   m_Layer: 0
   m_Name: Plane (36)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9209,6 +9379,11 @@ MonoBehaviour:
   row: 9
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &226255642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9401,6 +9576,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &227161671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9492,7 +9672,7 @@ GameObject:
   - component: {fileID: 231595080}
   m_Layer: 0
   m_Name: Plane (45)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9527,6 +9707,11 @@ MonoBehaviour:
   row: 11
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &231595081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9907,7 +10092,7 @@ GameObject:
   - component: {fileID: 257030393}
   m_Layer: 0
   m_Name: Plane (25)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9942,6 +10127,11 @@ MonoBehaviour:
   row: 8
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &257030394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10131,7 +10321,7 @@ GameObject:
   - component: {fileID: 257382534}
   m_Layer: 0
   m_Name: Plane (23)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10166,6 +10356,11 @@ MonoBehaviour:
   row: 5
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &257382535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10447,6 +10642,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &260238502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10475,7 +10675,7 @@ GameObject:
   - component: {fileID: 262161116}
   m_Layer: 0
   m_Name: Plane (49)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10510,6 +10710,11 @@ MonoBehaviour:
   row: 13
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &262161117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10953,6 +11158,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &284332848
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11263,6 +11473,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &295110343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11335,6 +11550,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &297534418
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11532,7 +11752,7 @@ GameObject:
   - component: {fileID: 305664441}
   m_Layer: 0
   m_Name: Plane (50)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11567,6 +11787,11 @@ MonoBehaviour:
   row: 16
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &305664442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11843,6 +12068,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &312052179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11958,6 +12188,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &315752636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12114,6 +12349,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &330271713
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12248,7 +12488,7 @@ GameObject:
   - component: {fileID: 334363711}
   m_Layer: 0
   m_Name: Plane (30)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12283,6 +12523,11 @@ MonoBehaviour:
   row: 7
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &334363712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12816,6 +13061,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &353474749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13185,7 +13435,7 @@ GameObject:
   - component: {fileID: 367499736}
   m_Layer: 0
   m_Name: Plane (53)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13220,6 +13470,11 @@ MonoBehaviour:
   row: 13
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &367499737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13622,6 +13877,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &374937976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13956,6 +14216,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &380132182
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14153,7 +14418,7 @@ GameObject:
   - component: {fileID: 386054712}
   m_Layer: 0
   m_Name: Plane (24)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14188,6 +14453,11 @@ MonoBehaviour:
   row: 5
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &386054713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14807,7 +15077,7 @@ GameObject:
   - component: {fileID: 412826733}
   m_Layer: 0
   m_Name: Plane (20)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14842,6 +15112,11 @@ MonoBehaviour:
   row: 8
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &412826734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15340,7 +15615,7 @@ GameObject:
   - component: {fileID: 429498717}
   m_Layer: 0
   m_Name: Plane (19)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15375,6 +15650,11 @@ MonoBehaviour:
   row: 3
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &429498718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15543,7 +15823,7 @@ GameObject:
   - component: {fileID: 431292143}
   m_Layer: 0
   m_Name: Plane (49)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15578,6 +15858,11 @@ MonoBehaviour:
   row: 16
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &431292144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15727,6 +16012,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &435804483
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15861,7 +16151,7 @@ GameObject:
   - component: {fileID: 436799484}
   m_Layer: 0
   m_Name: Plane (17)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15896,6 +16186,11 @@ MonoBehaviour:
   row: 4
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &436799485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16214,6 +16509,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &440017897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16507,6 +16807,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &445374505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16579,6 +16884,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &454421987
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17052,6 +17362,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &465049903
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18269,6 +18584,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &505313489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18297,7 +18617,7 @@ GameObject:
   - component: {fileID: 507107581}
   m_Layer: 0
   m_Name: Plane (41)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18332,6 +18652,11 @@ MonoBehaviour:
   row: 14
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &507107582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18565,6 +18890,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &509311856
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18996,6 +19326,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &534879767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19200,6 +19535,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &540210759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19228,7 +19568,7 @@ GameObject:
   - component: {fileID: 543053877}
   m_Layer: 0
   m_Name: Plane (34)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19263,6 +19603,11 @@ MonoBehaviour:
   row: 12
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &543053878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20136,6 +20481,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &578913872
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20597,7 +20947,7 @@ GameObject:
   - component: {fileID: 593603496}
   m_Layer: 0
   m_Name: Plane (44)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20632,6 +20982,11 @@ MonoBehaviour:
   row: 14
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &593603497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20737,7 +21092,7 @@ GameObject:
   - component: {fileID: 595400408}
   m_Layer: 0
   m_Name: Plane (35)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20772,6 +21127,11 @@ MonoBehaviour:
   row: 12
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &595400409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21150,7 +21510,7 @@ GameObject:
   - component: {fileID: 608511289}
   m_Layer: 0
   m_Name: Plane (47)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21185,6 +21545,11 @@ MonoBehaviour:
   row: 11
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &608511290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21379,7 +21744,7 @@ GameObject:
   - component: {fileID: 609783797}
   m_Layer: 0
   m_Name: Plane (21)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21414,6 +21779,11 @@ MonoBehaviour:
   row: 8
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &609783798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21519,7 +21889,7 @@ GameObject:
   - component: {fileID: 617504223}
   m_Layer: 0
   m_Name: Plane (22)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21554,6 +21924,11 @@ MonoBehaviour:
   row: 8
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &617504224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21746,6 +22121,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &621632686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21950,6 +22330,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &622838085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22022,6 +22407,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &624936092
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22156,7 +22546,7 @@ GameObject:
   - component: {fileID: 630306327}
   m_Layer: 0
   m_Name: Plane (32)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22191,6 +22581,11 @@ MonoBehaviour:
   row: 7
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &630306328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22340,6 +22735,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &632832716
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22411,7 +22811,7 @@ GameObject:
   - component: {fileID: 634100146}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22446,6 +22846,11 @@ MonoBehaviour:
   row: 1
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &634100147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22727,6 +23132,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &634946101
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22938,6 +23348,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &638990516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22966,7 +23381,7 @@ GameObject:
   - component: {fileID: 639653603}
   m_Layer: 0
   m_Name: Plane (50)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23001,6 +23416,11 @@ MonoBehaviour:
   row: 13
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &639653604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23898,7 +24318,7 @@ GameObject:
   - component: {fileID: 652951271}
   m_Layer: 0
   m_Name: Plane (15)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23933,6 +24353,11 @@ MonoBehaviour:
   row: 4
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &652951272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24518,6 +24943,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &675771051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24719,7 +25149,7 @@ GameObject:
   - component: {fileID: 684507359}
   m_Layer: 0
   m_Name: Plane (52)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24754,6 +25184,11 @@ MonoBehaviour:
   row: 13
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &684507360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24944,7 +25379,6 @@ MonoBehaviour:
   pairedRoom: {fileID: 0}
   playerCol: 3
   playerRow: 0
-  walls: []
 --- !u!114 &685025024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25075,7 +25509,7 @@ GameObject:
   - component: {fileID: 686399295}
   m_Layer: 0
   m_Name: Plane (28)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25110,6 +25544,11 @@ MonoBehaviour:
   row: 7
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &686399296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25495,6 +25934,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &696196328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25610,6 +26054,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &701208425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25809,6 +26258,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &702213975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26056,6 +26510,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &712155406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26084,7 +26543,7 @@ GameObject:
   - component: {fileID: 712881034}
   m_Layer: 0
   m_Name: Plane (62)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26119,6 +26578,11 @@ MonoBehaviour:
   row: 17
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &712881035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26521,6 +26985,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &723718912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26636,6 +27105,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &725750510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26751,6 +27225,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &731562896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26931,7 +27410,7 @@ GameObject:
   - component: {fileID: 750299322}
   m_Layer: 0
   m_Name: Plane (19)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26966,6 +27445,11 @@ MonoBehaviour:
   row: 4
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &750299323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27071,7 +27555,7 @@ GameObject:
   - component: {fileID: 750739250}
   m_Layer: 0
   m_Name: Plane (20)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27106,6 +27590,11 @@ MonoBehaviour:
   row: 5
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &750739251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27211,7 +27700,7 @@ GameObject:
   - component: {fileID: 756339321}
   m_Layer: 0
   m_Name: Plane (53)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27246,6 +27735,11 @@ MonoBehaviour:
   row: 16
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &756339322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27477,7 +27971,7 @@ GameObject:
   - component: {fileID: 761603059}
   m_Layer: 0
   m_Name: Plane (61)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27512,6 +28006,11 @@ MonoBehaviour:
   row: 15
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &761603060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27617,7 +28116,7 @@ GameObject:
   - component: {fileID: 764801651}
   m_Layer: 0
   m_Name: Plane (9)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27652,6 +28151,11 @@ MonoBehaviour:
   row: 2
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &764801652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28140,7 +28644,7 @@ GameObject:
   - component: {fileID: 778998723}
   m_Layer: 0
   m_Name: Plane (21)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28175,6 +28679,11 @@ MonoBehaviour:
   row: 5
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &778998724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28364,7 +28873,7 @@ GameObject:
   - component: {fileID: 781007411}
   m_Layer: 0
   m_Name: Plane (8)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28399,6 +28908,11 @@ MonoBehaviour:
   row: 4
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &781007412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28756,7 +29270,7 @@ GameObject:
   - component: {fileID: 798074749}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28791,6 +29305,11 @@ MonoBehaviour:
   row: 1
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &798074750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28980,7 +29499,7 @@ GameObject:
   - component: {fileID: 808152067}
   m_Layer: 0
   m_Name: Plane (40)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29015,6 +29534,11 @@ MonoBehaviour:
   row: 12
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &808152068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29120,7 +29644,7 @@ GameObject:
   - component: {fileID: 808417655}
   m_Layer: 0
   m_Name: Plane (41)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29155,6 +29679,11 @@ MonoBehaviour:
   row: 11
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &808417656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29386,7 +29915,7 @@ GameObject:
   - component: {fileID: 820619886}
   m_Layer: 0
   m_Name: Plane (16)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29421,6 +29950,11 @@ MonoBehaviour:
   row: 4
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &820619887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29702,6 +30236,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &826107444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29858,6 +30397,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &829242437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30223,7 +30767,7 @@ GameObject:
   - component: {fileID: 841254404}
   m_Layer: 0
   m_Name: Plane (12)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30258,6 +30802,11 @@ MonoBehaviour:
   row: 4
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &841254405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30426,7 +30975,7 @@ GameObject:
   - component: {fileID: 841539317}
   m_Layer: 0
   m_Name: Plane (39)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30461,6 +31010,11 @@ MonoBehaviour:
   row: 9
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &841539318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30653,6 +31207,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &842888719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31412,6 +31971,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &882245153
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31654,6 +32218,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &887265097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32036,6 +32605,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &904900117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32171,6 +32745,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &911901518
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32329,6 +32908,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &914882547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32653,6 +33237,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &925659956
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32920,6 +33509,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &930825124
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33227,7 +33821,7 @@ GameObject:
   - component: {fileID: 934259723}
   m_Layer: 0
   m_Name: Plane (37)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33262,6 +33856,11 @@ MonoBehaviour:
   row: 9
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &934259724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33411,6 +34010,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &935987895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33545,7 +34149,7 @@ GameObject:
   - component: {fileID: 939324671}
   m_Layer: 0
   m_Name: Plane (60)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33580,6 +34184,11 @@ MonoBehaviour:
   row: 17
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &939324672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33685,7 +34294,7 @@ GameObject:
   - component: {fileID: 940675282}
   m_Layer: 0
   m_Name: Plane (23)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33720,6 +34329,11 @@ MonoBehaviour:
   row: 8
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &940675283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33928,7 +34542,7 @@ GameObject:
   - component: {fileID: 944419427}
   m_Layer: 0
   m_Name: Plane (47)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33963,6 +34577,11 @@ MonoBehaviour:
   row: 14
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &944419428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34152,7 +34771,7 @@ GameObject:
   - component: {fileID: 947350242}
   m_Layer: 0
   m_Name: Plane (38)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34187,6 +34806,11 @@ MonoBehaviour:
   row: 12
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &947350243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34748,7 +35372,7 @@ GameObject:
   - component: {fileID: 958630915}
   m_Layer: 0
   m_Name: Plane (11)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34783,6 +35407,11 @@ MonoBehaviour:
   row: 4
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &958630916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34925,7 +35554,6 @@ MonoBehaviour:
   pairedRoom: {fileID: 1684891364}
   playerCol: 0
   playerRow: 0
-  walls: []
 --- !u!114 &958726506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35254,6 +35882,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &964686444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35496,6 +36129,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &977096639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35657,6 +36295,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &979818774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35815,6 +36458,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &980624580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36034,6 +36682,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &999195282
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36192,6 +36845,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1002791648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36283,7 +36941,7 @@ GameObject:
   - component: {fileID: 1018044662}
   m_Layer: 0
   m_Name: Plane (68)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36318,6 +36976,11 @@ MonoBehaviour:
   row: 17
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1018044663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36614,6 +37277,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1024460487
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36748,7 +37416,7 @@ GameObject:
   - component: {fileID: 1029884552}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36783,6 +37451,11 @@ MonoBehaviour:
   row: 4
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1029884553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36932,6 +37605,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1034189472
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37003,7 +37681,7 @@ GameObject:
   - component: {fileID: 1034607955}
   m_Layer: 0
   m_Name: Plane (64)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37038,6 +37716,11 @@ MonoBehaviour:
   row: 17
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1034607956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37313,6 +37996,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1044610072
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37644,6 +38332,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1052048119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37843,6 +38536,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1055466565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38301,7 +38999,7 @@ GameObject:
   - component: {fileID: 1065724738}
   m_Layer: 0
   m_Name: Plane (15)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38336,6 +39034,11 @@ MonoBehaviour:
   row: 2
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1065724739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38654,6 +39357,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1074975248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38832,6 +39540,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1077956290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39183,6 +39896,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1092276632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39274,7 +39992,7 @@ GameObject:
   - component: {fileID: 1093630157}
   m_Layer: 0
   m_Name: Plane (40)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39309,6 +40027,11 @@ MonoBehaviour:
   row: 9
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1093630158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39605,6 +40328,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1096422466
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39823,7 +40551,7 @@ GameObject:
   - component: {fileID: 1101308381}
   m_Layer: 0
   m_Name: Plane (48)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39858,6 +40586,11 @@ MonoBehaviour:
   row: 13
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1101308382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40007,6 +40740,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1111424731
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40078,7 +40816,7 @@ GameObject:
   - component: {fileID: 1114757824}
   m_Layer: 0
   m_Name: Plane (27)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40113,6 +40851,11 @@ MonoBehaviour:
   row: 10
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1114757825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40218,7 +40961,7 @@ GameObject:
   - component: {fileID: 1117436429}
   m_Layer: 0
   m_Name: Plane (57)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40253,6 +40996,11 @@ MonoBehaviour:
   row: 15
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1117436430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40580,6 +41328,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1123450105
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40738,6 +41491,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1131512559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41175,7 +41933,7 @@ GameObject:
   - component: {fileID: 1158363400}
   m_Layer: 0
   m_Name: Plane (26)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41210,6 +41968,11 @@ MonoBehaviour:
   row: 8
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1158363401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41441,7 +42204,7 @@ GameObject:
   - component: {fileID: 1161334888}
   m_Layer: 0
   m_Name: Plane (14)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41476,6 +42239,11 @@ MonoBehaviour:
   row: 2
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1161334889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42132,7 +42900,7 @@ GameObject:
   - component: {fileID: 1179525979}
   m_Layer: 0
   m_Name: Plane (60)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42167,6 +42935,11 @@ MonoBehaviour:
   row: 15
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1179525980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42316,6 +43089,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1180801913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42387,7 +43165,7 @@ GameObject:
   - component: {fileID: 1180988319}
   m_Layer: 0
   m_Name: Plane (58)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42422,6 +43200,11 @@ MonoBehaviour:
   row: 15
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1180988320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42614,6 +43397,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1184160648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42729,6 +43517,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1185741605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43336,6 +44129,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1210395211
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43557,6 +44355,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1210723709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43629,6 +44432,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1210757839
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44122,6 +44930,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1235583599
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44193,7 +45006,7 @@ GameObject:
   - component: {fileID: 1236548262}
   m_Layer: 0
   m_Name: Plane (42)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44228,6 +45041,11 @@ MonoBehaviour:
   row: 14
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1236548263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44548,7 +45366,7 @@ GameObject:
   - component: {fileID: 1250405653}
   m_Layer: 0
   m_Name: Plane (32)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44583,6 +45401,11 @@ MonoBehaviour:
   row: 10
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1250405654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44814,7 +45637,7 @@ GameObject:
   - component: {fileID: 1260064956}
   m_Layer: 0
   m_Name: Plane (33)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44849,6 +45672,11 @@ MonoBehaviour:
   row: 7
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1260064957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45749,6 +46577,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1279619310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46360,7 +47193,7 @@ GameObject:
   - component: {fileID: 1314245651}
   m_Layer: 0
   m_Name: Plane (43)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46395,6 +47228,11 @@ MonoBehaviour:
   row: 14
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1314245652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46500,7 +47338,7 @@ GameObject:
   - component: {fileID: 1315025712}
   m_Layer: 0
   m_Name: Plane (51)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46535,6 +47373,11 @@ MonoBehaviour:
   row: 16
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1315025713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46936,6 +47779,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1334027989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47094,6 +47942,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1338188732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47209,6 +48062,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1338477437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47387,6 +48245,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1346181115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47522,6 +48385,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1347523628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47682,7 +48550,7 @@ GameObject:
   - component: {fileID: 1350437715}
   m_Layer: 0
   m_Name: Plane (39)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47717,6 +48585,11 @@ MonoBehaviour:
   row: 12
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1350437716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47866,6 +48739,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1356096527
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48000,7 +48878,7 @@ GameObject:
   - component: {fileID: 1366172949}
   m_Layer: 0
   m_Name: Plane (7)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48035,6 +48913,11 @@ MonoBehaviour:
   row: 4
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1366172950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48766,6 +49649,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1393121820
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48837,7 +49725,7 @@ GameObject:
   - component: {fileID: 1399038133}
   m_Layer: 0
   m_Name: Plane (42)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48872,6 +49760,11 @@ MonoBehaviour:
   row: 11
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1399038134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49021,6 +49914,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1403799408
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49092,7 +49990,7 @@ GameObject:
   - component: {fileID: 1405763824}
   m_Layer: 0
   m_Name: Plane (9)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49127,6 +50025,11 @@ MonoBehaviour:
   row: 4
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1405763825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49232,7 +50135,7 @@ GameObject:
   - component: {fileID: 1405781746}
   m_Layer: 0
   m_Name: Plane (30)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49267,6 +50170,11 @@ MonoBehaviour:
   row: 10
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1405781747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49734,7 +50642,7 @@ GameObject:
   - component: {fileID: 1416715211}
   m_Layer: 0
   m_Name: Plane (11)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49769,6 +50677,11 @@ MonoBehaviour:
   row: 3
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1416715212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49874,7 +50787,7 @@ GameObject:
   - component: {fileID: 1422942538}
   m_Layer: 0
   m_Name: Plane (45)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49909,6 +50822,11 @@ MonoBehaviour:
   row: 14
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1422942539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50378,6 +51296,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1434830710
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50625,6 +51548,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1437570546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50936,6 +51864,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1454861082
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51222,7 +52155,7 @@ GameObject:
   - component: {fileID: 1463509653}
   m_Layer: 0
   m_Name: Plane (13)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51257,6 +52190,11 @@ MonoBehaviour:
   row: 3
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1463509654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51449,6 +52387,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1467672677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51584,6 +52527,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1470456870
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51802,7 +52750,7 @@ GameObject:
   - component: {fileID: 1482823649}
   m_Layer: 0
   m_Name: Plane (56)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51837,6 +52785,11 @@ MonoBehaviour:
   row: 17
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1482823650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51986,6 +52939,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1488597353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52735,6 +53693,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1505797677
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52958,7 +53921,7 @@ GameObject:
   - component: {fileID: 1526827877}
   m_Layer: 0
   m_Name: Plane (18)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52993,6 +53956,11 @@ MonoBehaviour:
   row: 3
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1526827878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53142,6 +54110,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1528363787
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53302,7 +54275,7 @@ GameObject:
   - component: {fileID: 1529874614}
   m_Layer: 0
   m_Name: Plane (13)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53337,6 +54310,11 @@ MonoBehaviour:
   row: 4
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1529874615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53442,7 +54420,7 @@ GameObject:
   - component: {fileID: 1532177708}
   m_Layer: 0
   m_Name: Plane (66)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53477,6 +54455,11 @@ MonoBehaviour:
   row: 17
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1532177709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53837,6 +54820,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1538319905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54078,6 +55066,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1543899150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54788,6 +55781,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1569066965
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55030,6 +56028,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1572279655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55343,6 +56346,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1587877341
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56427,7 +57435,7 @@ GameObject:
   - component: {fileID: 1643387814}
   m_Layer: 0
   m_Name: Plane (16)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56462,6 +57470,11 @@ MonoBehaviour:
   row: 2
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1643387815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56784,6 +57797,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1648085458
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56942,6 +57960,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1651354503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57306,7 +58329,7 @@ GameObject:
   - component: {fileID: 1666723387}
   m_Layer: 0
   m_Name: Plane (31)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57341,6 +58364,11 @@ MonoBehaviour:
   row: 7
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1666723388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58235,7 +59263,7 @@ GameObject:
   - component: {fileID: 1684202185}
   m_Layer: 0
   m_Name: Plane (43)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58270,6 +59298,11 @@ MonoBehaviour:
   row: 11
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1684202186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58475,7 +59508,6 @@ MonoBehaviour:
   pairedRoom: {fileID: 958726503}
   playerCol: 0
   playerRow: 0
-  walls: []
 --- !u!114 &1684891367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59231,6 +60263,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1693016268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59259,7 +60296,7 @@ GameObject:
   - component: {fileID: 1694561511}
   m_Layer: 0
   m_Name: Plane (52)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59294,6 +60331,11 @@ MonoBehaviour:
   row: 16
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1694561512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59527,6 +60569,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1697248835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59642,6 +60689,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1699449205
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60030,6 +61082,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1719916733
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60274,7 +61331,7 @@ GameObject:
   - component: {fileID: 1730629276}
   m_Layer: 0
   m_Name: Plane (55)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60309,6 +61366,11 @@ MonoBehaviour:
   row: 15
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1730629277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60802,7 +61864,7 @@ GameObject:
   - component: {fileID: 1753606609}
   m_Layer: 0
   m_Name: Plane (63)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60837,6 +61899,11 @@ MonoBehaviour:
   row: 17
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1753606610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60942,7 +62009,7 @@ GameObject:
   - component: {fileID: 1759085335}
   m_Layer: 0
   m_Name: Plane (37)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60977,6 +62044,11 @@ MonoBehaviour:
   row: 12
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1759085336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61232,6 +62304,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1766174137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61323,7 +62400,7 @@ GameObject:
   - component: {fileID: 1770196575}
   m_Layer: 0
   m_Name: Plane (44)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61358,6 +62435,11 @@ MonoBehaviour:
   row: 11
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1770196576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61741,7 +62823,7 @@ GameObject:
   - component: {fileID: 1781381496}
   m_Layer: 0
   m_Name: Plane (46)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61776,6 +62858,11 @@ MonoBehaviour:
   row: 14
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1781381497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62157,6 +63244,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1793320148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62248,7 +63340,7 @@ GameObject:
   - component: {fileID: 1799697402}
   m_Layer: 0
   m_Name: Plane (22)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62283,6 +63375,11 @@ MonoBehaviour:
   row: 5
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1799697403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62598,7 +63695,7 @@ GameObject:
   - component: {fileID: 1808230922}
   m_Layer: 0
   m_Name: Plane (10)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62633,6 +63730,11 @@ MonoBehaviour:
   row: 4
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1808230923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63013,6 +64115,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1813410013
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63191,6 +64298,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1813995811
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63345,7 +64457,7 @@ GameObject:
   - component: {fileID: 1820194142}
   m_Layer: 0
   m_Name: Plane (8)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63380,6 +64492,11 @@ MonoBehaviour:
   row: 2
   col: 1
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1820194143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64212,6 +65329,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1844565074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64820,6 +65942,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1866281858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65079,7 +66206,7 @@ GameObject:
   - component: {fileID: 1874224749}
   m_Layer: 0
   m_Name: Plane (54)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65114,6 +66241,11 @@ MonoBehaviour:
   row: 16
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1874224750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65219,7 +66351,7 @@ GameObject:
   - component: {fileID: 1875269536}
   m_Layer: 0
   m_Name: Plane (59)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65254,6 +66386,11 @@ MonoBehaviour:
   row: 17
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1875269537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65847,7 +66984,7 @@ GameObject:
   - component: {fileID: 1892608574}
   m_Layer: 0
   m_Name: Plane (65)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65882,6 +67019,11 @@ MonoBehaviour:
   row: 17
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1892608575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66425,6 +67567,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1916041427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67049,6 +68196,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1932584821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67164,6 +68316,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1934674871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67365,7 +68522,7 @@ GameObject:
   - component: {fileID: 1937167124}
   m_Layer: 0
   m_Name: Plane (25)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67400,6 +68557,11 @@ MonoBehaviour:
   row: 5
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1937167125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67744,6 +68906,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1942083236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67859,6 +69026,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1942526956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67931,6 +69103,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1945843002
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68215,6 +69392,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &1950100843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68495,7 +69677,7 @@ GameObject:
   - component: {fileID: 1962479837}
   m_Layer: 0
   m_Name: Plane (24)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68530,6 +69712,11 @@ MonoBehaviour:
   row: 8
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1962479838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68945,7 +70132,7 @@ GameObject:
   - component: {fileID: 1967265986}
   m_Layer: 0
   m_Name: Plane (51)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68980,6 +70167,11 @@ MonoBehaviour:
   row: 13
   col: 0
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1967265987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69237,7 +70429,7 @@ GameObject:
   - component: {fileID: 1970867692}
   m_Layer: 0
   m_Name: Plane (56)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69272,6 +70464,11 @@ MonoBehaviour:
   row: 15
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1970867693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69739,7 +70936,7 @@ GameObject:
   - component: {fileID: 1980910732}
   m_Layer: 0
   m_Name: Plane (26)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69774,6 +70971,11 @@ MonoBehaviour:
   row: 5
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1980910733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70935,6 +72137,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &2010415933
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71518,6 +72725,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &2023692870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71679,6 +72891,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &2024987677
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71883,6 +73100,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &2031091201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72342,7 +73564,7 @@ GameObject:
   - component: {fileID: 2044197647}
   m_Layer: 0
   m_Name: Plane (35)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72377,6 +73599,11 @@ MonoBehaviour:
   row: 9
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2044197648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72569,6 +73796,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &2045339689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73027,7 +74259,7 @@ GameObject:
   - component: {fileID: 2060335177}
   m_Layer: 0
   m_Name: Plane (18)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73062,6 +74294,11 @@ MonoBehaviour:
   row: 4
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2060335178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73445,7 +74682,7 @@ GameObject:
   - component: {fileID: 2067126756}
   m_Layer: 0
   m_Name: Plane (67)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73480,6 +74717,11 @@ MonoBehaviour:
   row: 17
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2067126757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73910,7 +75152,7 @@ GameObject:
   - component: {fileID: 2071037668}
   m_Layer: 0
   m_Name: Plane (48)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73945,6 +75187,11 @@ MonoBehaviour:
   row: 16
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2071037669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74183,6 +75430,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &2073598060
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74298,6 +75550,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &2074309065
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74736,7 +75993,7 @@ GameObject:
   - component: {fileID: 2088797759}
   m_Layer: 0
   m_Name: Plane (38)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74771,6 +76028,11 @@ MonoBehaviour:
   row: 9
   col: 6
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2088797760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75047,6 +76309,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &2091333053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75266,6 +76533,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &2095730061
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75424,6 +76696,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &2095994879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75452,7 +76729,7 @@ GameObject:
   - component: {fileID: 2097203822}
   m_Layer: 0
   m_Name: Plane (28)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75487,6 +76764,11 @@ MonoBehaviour:
   row: 10
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2097203823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75655,7 +76937,7 @@ GameObject:
   - component: {fileID: 2106518468}
   m_Layer: 0
   m_Name: Plane (5)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75690,6 +76972,11 @@ MonoBehaviour:
   row: 1
   col: 4
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2106518469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76036,7 +77323,7 @@ GameObject:
   - component: {fileID: 2117110842}
   m_Layer: 0
   m_Name: Plane (7)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76071,6 +77358,11 @@ MonoBehaviour:
   row: 2
   col: 2
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2117110843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76323,7 +77615,7 @@ GameObject:
   - component: {fileID: 2128229948}
   m_Layer: 0
   m_Name: Plane (4)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76358,6 +77650,11 @@ MonoBehaviour:
   row: 1
   col: 5
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2128229949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76676,6 +77973,11 @@ MonoBehaviour:
   row: 0
   col: 0
   wall: {fileID: 0}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &2135495351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76793,7 +78095,7 @@ GameObject:
   - component: {fileID: 2139785274}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: MirrorRoomTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76828,6 +78130,11 @@ MonoBehaviour:
   row: 2
   col: 3
   wall: {fileID: 1460497123168636, guid: 7d230f0a45766b64faaa28619a2b4328, type: 2}
+  walls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2139785275
 MonoBehaviour:
   m_ObjectHideFlags: 0
