@@ -7481,12 +7481,44 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.6731
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 14.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.4905
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.00001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18ff9f6ed12cff34fa8994a686abbc1e, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &292617168 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4866171173638962, guid: 18ff9f6ed12cff34fa8994a686abbc1e,
+  m_PrefabParentObject: {fileID: 4243690396339658, guid: 18ff9f6ed12cff34fa8994a686abbc1e,
     type: 2}
   m_PrefabInternal: {fileID: 292617167}
 --- !u!1001 &294201107
