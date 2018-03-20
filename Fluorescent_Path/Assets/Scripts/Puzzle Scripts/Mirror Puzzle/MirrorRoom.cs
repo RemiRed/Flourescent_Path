@@ -16,6 +16,7 @@ public class MirrorRoom : RoomVariables
 
     void Start()
     {
+
         foreach (GameObject wall in GameObject.FindGameObjectsWithTag("MirrorRoomWall"))
         {
             if (wall.GetComponent<MirrorPuzzleWalls>())
@@ -23,7 +24,7 @@ public class MirrorRoom : RoomVariables
                 walls.Add(wall.GetComponent<MirrorPuzzleWalls>());
             }
         }
-     
+
         List<MirrorPuzzleWalls> tempTestList = new List<MirrorPuzzleWalls>();
         foreach (MirrorPuzzleWalls wall in walls)
         {
