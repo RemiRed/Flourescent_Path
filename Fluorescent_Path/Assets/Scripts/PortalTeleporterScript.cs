@@ -11,8 +11,7 @@ public class PortalTeleporterScript : MonoBehaviour {
     bool playerIsOverLapping = false;
 
 	void Update () {
-        
-		if (playerIsOverLapping)
+        if (playerIsOverLapping)
         {
             Vector3 portalToPlayer = player.position - transform.position;
             float dotProduct = Vector3.Dot(transform.up, portalToPlayer);
@@ -29,8 +28,12 @@ public class PortalTeleporterScript : MonoBehaviour {
                 player.position = reciver.position + positionOffset;
 
                 playerIsOverLapping = false;
+
+
+
             }
         }
+		
 	}
 
     void OnTriggerEnter (Collider other)

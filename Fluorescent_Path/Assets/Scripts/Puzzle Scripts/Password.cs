@@ -4,36 +4,25 @@ using UnityEngine;
 
 public class Password : MonoBehaviour {
 
-	public PasswordButton[] passwordButtons;
 
-	public int nextID, passwordLock;
+	public GameObject[] passwordButtons;
+
+	public bool[] correctEntry; 
+
+
+
+
+	// Use this for initialization
+	void Start () {
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
 		
-	public void CheckPassword(int _ID){
-
-		if (_ID == nextID) {
-
-			nextID++;
-			passwordLock++;
-
-			if (passwordLock == passwordButtons.Length) {
-
-						Debug.Log ("CORRECT PASSWORD!");
-			}
-				
-		} else {
-
-			for (int i = 0; i < passwordButtons.Length; i++) {
-
-				passwordButtons [i].buttonActive = true;
-			}
-			nextID = 0;
-			passwordLock = 0;
-		}
 	}
 
-	void RandomizePAssword(){
 
 
 
-	}
 }
