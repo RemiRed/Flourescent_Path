@@ -9,12 +9,17 @@ public class MirrorRoom : RoomVariables
     [SyncVar]
     public int playerCol, playerRow;
     
+    [SerializeField]
+    List<PlayerDetectingTiles> tiles = new List<PlayerDetectingTiles>();
 
     int col = 3, row = 1;
 
     void Start()
     {
+        foreach (GameObject tile in GameObject.FindGameObjectsWithTag("MirrorRoomTile"))
+        {
 
+        }
     }
 
     void Update()
