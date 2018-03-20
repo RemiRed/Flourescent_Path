@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65054487097801244}
   - component: {fileID: 23633131007016672}
   m_Layer: 0
-  m_Name: WallTemp
+  m_Name: Wall
   m_TagString: MirrorRoomWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

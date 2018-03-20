@@ -21,6 +21,7 @@ public class PlayerDetectingTiles : NetworkBehaviour
         rotate.eulerAngles = new Vector3(0, 90, 0);
         walls.Add(Instantiate(wall, transform.position + new Vector3(-2.75f, 1.9f, 0), rotate));
         walls.Add(Instantiate(wall, transform.position + new Vector3(0, 1.9f, -2.75f), new Quaternion()));
+
         //CreatePath();
     }
 
