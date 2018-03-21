@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interractable
+  - Movable
+  - P2
+  - P1
+  - PasswordManager
   layers:
   - Default
   - TransparentFX
