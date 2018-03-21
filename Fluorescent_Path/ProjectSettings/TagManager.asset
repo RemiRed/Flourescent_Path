@@ -4,15 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Movable
-  - Interractable
-  - RoomLoader
-<<<<<<< HEAD
-  - P1
   - P2
-=======
-  - MirrorRoomWall
->>>>>>> d0b833d33ff6d3948da9b9799891472b2dd42d55
+  - P1
+  - Interractable
+  - Movable
   layers:
   - Default
   - TransparentFX
@@ -22,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - Movable
+  - 
   - 
   - 
   - 
@@ -49,7 +44,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Foreground
-    uniqueID: 3885995105
     locked: 0
