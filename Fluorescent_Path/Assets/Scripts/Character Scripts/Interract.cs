@@ -24,7 +24,6 @@ public class Interract : MonoBehaviour
     Vector3 oldPos; //Old position, used to calculate the force to emulate throwing
     Quaternion oldRot; //Old Rotation, used to stop the object from rotating
 
-
     float defaultDrag;
     private void Start() //saving the drag on the player component
     {
@@ -67,10 +66,7 @@ public class Interract : MonoBehaviour
             lastInterractedObject.GetComponent<Interractable>().StopInterract();
         }
     }
-
-
-
-
+		
     void Pickup()
     {
         int x = Screen.width / 2;

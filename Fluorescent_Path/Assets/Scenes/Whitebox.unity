@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4863,8 +4863,7 @@ MonoBehaviour:
   doorPrefab: {fileID: 1076443310995392, guid: d98973579d9ff82428bad26838a6d223, type: 2}
   numberOfRooms: 1
   availableRooms:
-  - {fileID: 1641460689761824, guid: 9f0ee8aa795ac354d960e1e30d409711, type: 2}
-  - {fileID: 1348159057234118, guid: 5bbb39d6fcd99f4439a7de21166b13f6, type: 2}
+  - {fileID: 1004689718124106, guid: 6b2a46fd8f442674698972039a38b549, type: 2}
   currentRoomP1: {fileID: 586365085}
   currentRoomP2: {fileID: 1113328384}
   currentCorridorP1: {fileID: 1716670125}
