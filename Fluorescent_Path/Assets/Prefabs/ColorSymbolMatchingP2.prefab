@@ -459,23 +459,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1698111133666620
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4121769442925456}
-  - component: {fileID: 114046781884727382}
-  - component: {fileID: 114755600769508444}
-  m_Layer: 0
-  m_Name: SymbolColorLevel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1731630217541944
 GameObject:
   m_ObjectHideFlags: 1
@@ -668,19 +651,6 @@ Transform:
   m_Father: {fileID: 4606126306839446}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!4 &4121769442925456
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1698111133666620}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4464190525327932}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4218101715343558
 Transform:
   m_ObjectHideFlags: 1
@@ -831,12 +801,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092117414226614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalPosition: {x: 0, y: 0, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4606126306839446}
   - {fileID: 4760057113548210}
-  - {fileID: 4121769442925456}
   - {fileID: 4640622642184372}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -963,11 +932,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1691501491651414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19, y: 0.5, z: -50}
+  m_LocalPosition: {x: 18, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4464190525327932}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4668195049343788
 Transform:
@@ -2422,38 +2391,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114046781884727382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1698111133666620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 53
-    i1: 218
-    i2: 152
-    i3: 139
-    i4: 57
-    i5: 171
-    i6: 161
-    i7: 68
-    i8: 42
-    i9: 138
-    i10: 1
-    i11: 72
-    i12: 246
-    i13: 239
-    i14: 30
-    i15: 121
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!114 &114418218478381740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2513,61 +2450,6 @@ MonoBehaviour:
   entryDoor: {fileID: 0}
   exitDoor: {fileID: 0}
   pairedRoom: {fileID: 0}
---- !u!114 &114755600769508444
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1698111133666620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b4c72b1754e7a74f8af7dfed4ddf983, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  passwordManager: {fileID: 0}
-  P1Clues: {fileID: 0}
-  P2Clues: {fileID: 0}
-  unsetPasswordButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  symbolColors:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0.19999981, g: 0, b: 1, a: 0}
-  - {r: 0, g: 0.72794116, b: 0.33635905, a: 0}
-  - {r: 1, g: 0.7655173, b: 0, a: 0}
-  - {r: 0.9558824, g: 0, b: 0.5735298, a: 0}
-  - {r: 0, g: 0.95862055, b: 1, a: 0}
-  symbols:
-  - {fileID: 2100000, guid: cc30b7c2051196c48a8f745fd48c83a4, type: 2}
-  - {fileID: 2100000, guid: f100847e556a0f843b91572b06f86cc5, type: 2}
-  - {fileID: 2100000, guid: 257213e025e74b24c89bfd41c6b6aac6, type: 2}
-  - {fileID: 2100000, guid: 1e704be93eed7f648b99297d1d1dbd60, type: 2}
-  - {fileID: 2100000, guid: db7f7b7b5f1c2a24793ab0d7122ed8da, type: 2}
-  - {fileID: 2100000, guid: 49dfc4fc2db04174d934140532e9fc23, type: 2}
-  - {fileID: 2100000, guid: f00c6f9b0bf3b024f9b567f2ff6dcef4, type: 2}
-  - {fileID: 2100000, guid: a5967e4120402404d87bbb2e67b74936, type: 2}
-  - {fileID: 2100000, guid: 377a3da812d9fbe4999394f235921e22, type: 2}
-  - {fileID: 2100000, guid: 558ffe86240dc54478fb388e33283842, type: 2}
-  - {fileID: 2100000, guid: ba09541aba26ad546bdde2bc98b5f87e, type: 2}
-  - {fileID: 2100000, guid: 66c3af02a4947f74ab4a0864ec4b5528, type: 2}
-  - {fileID: 2100000, guid: a9c0af505fe59e4458b880c1527c7e5b, type: 2}
-  - {fileID: 2100000, guid: 72be8f08aec1dbb4c98df62564fd2000, type: 2}
-  - {fileID: 2100000, guid: 0be5ec9b6049fbe4da522852ed7425d0, type: 2}
-  - {fileID: 2100000, guid: e09ed4fca5da61f4fa783c872d308109, type: 2}
-  - {fileID: 2100000, guid: 6d179862ce06cb942a68438087e94d3b, type: 2}
-  - {fileID: 2100000, guid: f2516a6186b451b4c93eb1246335b29b, type: 2}
-  - {fileID: 2100000, guid: 48db1d8ba1d2b324d81560654526fd05, type: 2}
-  passwordLengt: 6
 --- !u!114 &114989231939358562
 MonoBehaviour:
   m_ObjectHideFlags: 1

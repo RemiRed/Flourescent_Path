@@ -15,9 +15,6 @@ public class ColorSymbolPasswordRandomizer : NetworkBehaviour {
 
 	public int passwordLengt;
 
-//	public List<Transform> symbolLocations;
-
-
 	// Use this for initialization
 	void Start () {
 
@@ -26,6 +23,7 @@ public class ColorSymbolPasswordRandomizer : NetworkBehaviour {
 
 	public void StartPuzzle(){
 
+		passwordManager = GameObject.FindGameObjectWithTag ("PasswordManager").GetComponent<Password> ();
 		P1Clues = GameObject.FindGameObjectWithTag ("P1").GetComponent<PasswordClues> ();
 		P2Clues = GameObject.FindGameObjectWithTag ("P2").GetComponent<PasswordClues> ();
 
