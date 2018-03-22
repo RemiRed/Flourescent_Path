@@ -1,8 +1,8 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
 /Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
@@ -32,23 +32,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-*.ide
-<<<<<<< HEAD
-=======
-*.ide-shm
-*.ide-wal
->>>>>>> Ankan
-*.ide-shm
-*.ide-wal
-*.ide-shm
-*.ide-wal
-Fluorescent_Path/Assets/Scenes/Oskar scene.unity
-*.ide-shm
-*.ide-wal
-*.ide
-*.ide
-*.ide-wal
-*.ide
-*.ide
-*.ide-shm
-*.ide-wal
