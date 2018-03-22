@@ -15,4 +15,6 @@ public class LeverScript : Interractable {
 
     }
 
+
+
 }
