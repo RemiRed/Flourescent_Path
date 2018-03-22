@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Password : MonoBehaviour {
 
-	public PasswordButton[] passwordButtons;
-
-	public int nextID, passwordLock;
+	public List<PasswordButton> passwordButtons;
+	public int nextID, passwordLock, passwordLength;
 		
 	public void CheckPassword(int _ID){
 
@@ -15,25 +14,20 @@ public class Password : MonoBehaviour {
 			nextID++;
 			passwordLock++;
 
-			if (passwordLock == passwordButtons.Length) {
+			if (passwordLock == passwordLength) {
 
-						Debug.Log ("CORRECT PASSWORD!");
+						Debug.Log ("CORRECT PASSWORD!"); //Replace with some door opening method cool
 			}
 				
 		} else {
 
-			for (int i = 0; i < passwordButtons.Length; i++) {
+			for (int i = 0; i < passwordButtons.Count; i++) {
 
 				passwordButtons [i].buttonActive = true;
 			}
-			nextID = 0;
+
+			nextID = 1;
 			passwordLock = 0;
 		}
-	}
-
-	void RandomizePAssword(){
-
-
-
 	}
 }

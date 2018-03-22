@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Movable
+  - P2
+  - P1
   - Interractable
-  - RoomLoader
-  - MirrorRoomWall
+  - Movable
   layers:
   - Default
   - TransparentFX
@@ -17,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - Movable
+  - 
   - 
   - 
   - 

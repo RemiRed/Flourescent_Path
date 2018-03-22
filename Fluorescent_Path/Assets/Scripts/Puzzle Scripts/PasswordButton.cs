@@ -7,6 +7,7 @@ public class PasswordButton : Interractable {
 	public Password passwordManager;
 	public int buttonOrderID;
 	public bool buttonActive = true;
+	public Material symbol;
 
 	void PasswordButtonPressed(){
 
@@ -14,7 +15,7 @@ public class PasswordButton : Interractable {
 
 			buttonActive = false;
 
-			passwordManager.CheckPassword (buttonOrderID-1);
+			passwordManager.CheckPassword (buttonOrderID);
 		}
 	}
 }
