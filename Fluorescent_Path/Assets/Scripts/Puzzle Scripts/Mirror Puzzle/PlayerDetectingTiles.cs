@@ -8,14 +8,13 @@ public class PlayerDetectingTiles : NetworkBehaviour
     [SerializeField]
     GameObject room;
     GameObject player;
-    [SerializeField]
-    int row, col;
+    public int row, col;
 
     [SerializeField]
     GameObject wall;
 
     [SerializeField]
-    GameObject[] walls = new GameObject[4];
+    public GameObject[] walls = new GameObject[4];
 
 
     private void Start()
@@ -83,7 +82,6 @@ public class PlayerDetectingTiles : NetworkBehaviour
                 }
             }
         }
-
     }
 
     void OnTriggerEnter(Collider playerCollider)
@@ -94,26 +92,29 @@ public class PlayerDetectingTiles : NetworkBehaviour
         room.GetComponent<MirrorRoom>().playerRow = row;
     }
 
-    void OnTriggerExit(Collider coolDude)
+    void OnTriggerExit(Collider playerCollider)
     {
         player = null;
     }
 
-    public void RemoveWall(int wallID)
-    {
-        print("REMOVED at " + row + " " + col);
-        walls[wallID].SetActive(false);
-    }
+    
 
-   public bool CheckRowCol(int row, int col)
+    public bool RemoveWall(int wallID)
+
     {
-        if (row == this.row && col == this.col)
-        {
-            return true;
-        }
-        else
+        if (walls[wallID] == null)
         {
             return false;
         }
+        if (!walls[wallID].activeSelf)
+        {
+            return false;
+        }
+        if (!walls[wallID].GetComponent<MirrorPuzzleWalls>().removable)
+        {
+            return false;
+        }
+        walls[wallID].SetActive(false);
+        return true;
     }
 }

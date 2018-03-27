@@ -4,6 +4,5 @@ using UnityEngine;
 
 public class MirrorPuzzleWalls : MonoBehaviour
 {
-    public int row, col;
-
+    public bool removable;
 }
